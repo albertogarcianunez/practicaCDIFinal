@@ -5,6 +5,8 @@
  */
 package FramesCliente;
 
+import java.awt.BorderLayout;
+
 /**
  *
  * @author Alber
@@ -27,8 +29,8 @@ public class FramePrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        panelFrame = new javax.swing.JPanel();
+        botonInicio = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1080, 720));
@@ -36,33 +38,66 @@ public class FramePrincipal extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(1080, 720));
         setResizable(false);
 
-        jButton1.setText("Hacer Pedido");
+        panelFrame.setMaximumSize(new java.awt.Dimension(1080, 720));
+        panelFrame.setMinimumSize(new java.awt.Dimension(1080, 720));
+        panelFrame.setPreferredSize(new java.awt.Dimension(1080, 720));
 
-        jButton2.setText("Configurar Mesa");
+        botonInicio.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        botonInicio.setText("¡Qué aproveche!");
+        botonInicio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonInicioActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelFrameLayout = new javax.swing.GroupLayout(panelFrame);
+        panelFrame.setLayout(panelFrameLayout);
+        panelFrameLayout.setHorizontalGroup(
+            panelFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFrameLayout.createSequentialGroup()
+                .addContainerGap(340, Short.MAX_VALUE)
+                .addComponent(botonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(340, 340, 340))
+        );
+        panelFrameLayout.setVerticalGroup(
+            panelFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFrameLayout.createSequentialGroup()
+                .addContainerGap(565, Short.MAX_VALUE)
+                .addComponent(botonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(55, 55, 55))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(270, 270, 270)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(270, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(panelFrame, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(164, 164, 164)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(92, 92, 92)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(164, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(panelFrame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void botonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonInicioActionPerformed
+        // TODO add your handling code here:
+                panelInicio p1 = new panelInicio();
+		p1.setSize(1080, 720);
+		p1.setLocation(5, 5);
+		
+		panelFrame.removeAll();
+		panelFrame.add(p1, BorderLayout.CENTER);
+		panelFrame.revalidate();
+		panelFrame.repaint();
+    }//GEN-LAST:event_botonInicioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -100,7 +135,7 @@ public class FramePrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton botonInicio;
+    private javax.swing.JPanel panelFrame;
     // End of variables declaration//GEN-END:variables
 }
