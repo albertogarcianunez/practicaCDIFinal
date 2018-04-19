@@ -11,12 +11,12 @@ import java.awt.BorderLayout;
  *
  * @author Alber
  */
-public class panelInicio extends javax.swing.JPanel {
+public class PanelInicio extends javax.swing.JPanel {
 
     /**
      * Creates new form panelInicio
      */
-    public panelInicio() {
+    public PanelInicio() {
         initComponents();
     }
 
@@ -36,9 +36,20 @@ public class panelInicio extends javax.swing.JPanel {
 
         hacerPedido.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         hacerPedido.setText("Hacer Pedido");
+        hacerPedido.setMaximumSize(new java.awt.Dimension(550, 150));
+        hacerPedido.setMinimumSize(new java.awt.Dimension(550, 150));
+        hacerPedido.setPreferredSize(new java.awt.Dimension(550, 150));
+        hacerPedido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hacerPedidoActionPerformed(evt);
+            }
+        });
 
         configMesa.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         configMesa.setText("Configurar Mesa");
+        configMesa.setMaximumSize(new java.awt.Dimension(550, 150));
+        configMesa.setMinimumSize(new java.awt.Dimension(550, 150));
+        configMesa.setPreferredSize(new java.awt.Dimension(550, 150));
         configMesa.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 configMesaMouseClicked(evt);
@@ -54,21 +65,22 @@ public class panelInicio extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(270, 270, 270)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hacerPedido, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(configMesa, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(270, 270, 270))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(configMesa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(265, 265, 265)
+                        .addComponent(hacerPedido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(265, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(166, 166, 166)
-                .addComponent(hacerPedido, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(88, 88, 88)
-                .addComponent(configMesa, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(166, 166, 166))
+                .addGap(175, 175, 175)
+                .addComponent(hacerPedido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(100, 100, 100)
+                .addComponent(configMesa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -78,15 +90,27 @@ public class panelInicio extends javax.swing.JPanel {
 
     private void configMesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_configMesaActionPerformed
         // TODO add your handling code here:
-        PanelMesa p1 = new PanelMesa();
-        p1.setSize(1080, 720);
-        p1.setLocation(5, 5);
+        PanelMesa p = new PanelMesa();
+        p.setSize(1080, 720);
+        p.setLocation(0, 0);
 
         this.removeAll();
-        this.add(p1, BorderLayout.CENTER);
+        this.add(p, BorderLayout.CENTER);
         this.revalidate();
         this.repaint();
     }//GEN-LAST:event_configMesaActionPerformed
+
+    private void hacerPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hacerPedidoActionPerformed
+        // TODO add your handling code here:
+		PanelPedido p = new PanelPedido();
+        p.setSize(1080, 720);
+        p.setLocation(0, 0);
+
+        this.removeAll();
+        this.add(p, BorderLayout.CENTER);
+        this.revalidate();
+        this.repaint();
+    }//GEN-LAST:event_hacerPedidoActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
