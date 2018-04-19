@@ -89,9 +89,9 @@ public class FramePrincipal extends javax.swing.JFrame {
 
     private void botonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonInicioActionPerformed
         // TODO add your handling code here:
-                panelInicio p1 = new panelInicio();
+                PanelInicio p1 = new PanelInicio();
 		p1.setSize(1080, 720);
-		p1.setLocation(5, 5);
+		p1.setLocation(0, 0);
 		
 		panelFrame.removeAll();
 		panelFrame.add(p1, BorderLayout.CENTER);
