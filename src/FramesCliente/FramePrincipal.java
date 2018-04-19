@@ -16,6 +16,9 @@ public class FramePrincipal extends javax.swing.JFrame {
     /**
      * Creates new form FramePrincipal
      */
+    
+    private static int plato = 0;
+    
     public FramePrincipal() {
         initComponents();
         
@@ -132,6 +135,14 @@ public class FramePrincipal extends javax.swing.JFrame {
                 new FramePrincipal().setVisible(true);
             }
         });
+    }
+    
+    public static void setPlato (int p){
+        plato = p;
+    }
+    
+    public static int getPlato (){
+        return plato;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

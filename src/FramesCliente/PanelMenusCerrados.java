@@ -33,6 +33,7 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
         botonVolver = new javax.swing.JButton();
         panelMenu1 = new javax.swing.JPanel();
         botonMenu1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         panelMenu2 = new javax.swing.JPanel();
         botonMenu2 = new javax.swing.JButton();
         panelMenu3 = new javax.swing.JPanel();
@@ -42,6 +43,7 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
 
         setMaximumSize(new java.awt.Dimension(1080, 720));
         setMinimumSize(new java.awt.Dimension(1080, 720));
+        setPreferredSize(new java.awt.Dimension(1080, 720));
 
         botonVolver.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         botonVolver.setText("Volver");
@@ -62,21 +64,30 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
         botonMenu1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         botonMenu1.setText("Seleccionar");
 
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel1.setText("Vegetariano");
+
         javax.swing.GroupLayout panelMenu1Layout = new javax.swing.GroupLayout(panelMenu1);
         panelMenu1.setLayout(panelMenu1Layout);
         panelMenu1Layout.setHorizontalGroup(
             panelMenu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelMenu1Layout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addComponent(botonMenu1)
-                .addContainerGap(93, Short.MAX_VALUE))
+                .addGap(74, 74, 74)
+                .addGroup(panelMenu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelMenu1Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(botonMenu1))
+                    .addComponent(jLabel1))
+                .addContainerGap(80, Short.MAX_VALUE))
         );
         panelMenu1Layout.setVerticalGroup(
             panelMenu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelMenu1Layout.createSequentialGroup()
                 .addContainerGap()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(botonMenu1)
-                .addContainerGap(454, Short.MAX_VALUE))
+                .addContainerGap(420, Short.MAX_VALUE))
         );
 
         panelMenu2.setBackground(new java.awt.Color(204, 204, 255));
@@ -131,6 +142,11 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
 
         botonConfirmarPedido.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         botonConfirmarPedido.setText("Confirmar Pedido");
+        botonConfirmarPedido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonConfirmarPedidoActionPerformed(evt);
+            }
+        });
 
         labelTitulo.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         labelTitulo.setText("Menús Cerrados");
@@ -161,12 +177,12 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(375, 375, 375)
                         .addComponent(labelTitulo)))
-                .addContainerGap(105, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(21, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(labelTitulo)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -194,6 +210,11 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
 		this.repaint();
     }//GEN-LAST:event_botonVolverActionPerformed
 
+    private void botonConfirmarPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonConfirmarPedidoActionPerformed
+        // TODO add your handling code here:
+        FramePrincipal.setPlato(1);
+    }//GEN-LAST:event_botonConfirmarPedidoActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botonConfirmarPedido;
@@ -201,6 +222,7 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
     private javax.swing.JButton botonMenu2;
     private javax.swing.JButton botonMenu3;
     private javax.swing.JButton botonVolver;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel labelTitulo;
     private javax.swing.JPanel panelMenu1;
     private javax.swing.JPanel panelMenu2;
