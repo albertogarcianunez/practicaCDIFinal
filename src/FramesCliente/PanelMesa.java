@@ -17,7 +17,7 @@ public class PanelMesa extends javax.swing.JPanel {
     /**
      * Creates new form PanelMesa
      */
-    private int altura = 50;
+    private int altura = 60;
     
     public PanelMesa() {
         initComponents();
@@ -63,7 +63,7 @@ public class PanelMesa extends javax.swing.JPanel {
         jLabel1.setText("Altura");
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
 
-        numAltura.setText("50");
+        numAltura.setText("60");
 
         jLabel2.setText("cm");
 
@@ -130,7 +130,15 @@ public class PanelMesa extends javax.swing.JPanel {
 
     private void bajarAlturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bajarAlturaActionPerformed
         // TODO add your handling code here:
-        numAltura.setText("49");
+        altura= altura - 1;
+        String cadena = Integer.toString(altura);
+        numAltura.setText(cadena);
+          if(!subirAltura.isEnabled())
+            subirAltura.setEnabled(true);
+        if(altura<=50)
+            bajarAltura.setEnabled(false);
+        else
+            bajarAltura.setEnabled(true);
     }//GEN-LAST:event_bajarAlturaActionPerformed
 
     private void botonVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonVolverActionPerformed
@@ -148,8 +156,14 @@ public class PanelMesa extends javax.swing.JPanel {
     private void subirAlturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subirAlturaActionPerformed
         // TODO add your handling code here:
         altura= altura + 1;
-        //String alturaString = altura.toString();
-        numAltura.setText("51");
+        String cadena = Integer.toString(altura);
+        numAltura.setText(cadena);
+        if(!bajarAltura.isEnabled())
+            bajarAltura.setEnabled(true);
+        if(altura>=100)
+            subirAltura.setEnabled(false);
+        else
+            subirAltura.setEnabled(true);
         
     }//GEN-LAST:event_subirAlturaActionPerformed
 
