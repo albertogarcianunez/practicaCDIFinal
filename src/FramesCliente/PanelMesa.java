@@ -18,9 +18,26 @@ public class PanelMesa extends javax.swing.JPanel {
      * Creates new form PanelMesa
      */
     private int altura = 60;
+    private int temperatura = 15;
+    private int plato = 0;
     
     public PanelMesa() {
         initComponents();
+        if (FramePrincipal.getPlato() == 0){
+            botonCambioPlato.setEnabled(false);
+        }
+        else if (FramePrincipal.getPlato() == 1){
+            botonCambioPlato.setEnabled(true);
+            botonCambioPlato.setText("Pasar al segundo plato");
+        }
+        else if (FramePrincipal.getPlato() == 2){
+            botonCambioPlato.setEnabled(true);
+            botonCambioPlato.setText("Pasar al postre");
+        }
+        else if (FramePrincipal.getPlato() == 3){
+            botonCambioPlato.setEnabled(true);
+            botonCambioPlato.setText("Fin Comida");
+        }
     }
 
     /**
@@ -39,7 +56,16 @@ public class PanelMesa extends javax.swing.JPanel {
         numAltura = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         botonVolver = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        botonInformacion = new javax.swing.JButton();
+        botonCubiertos = new javax.swing.JButton();
+        botonCambioPlato = new javax.swing.JButton();
+        botonPedirBebida = new javax.swing.JButton();
+        botonCambioVaso = new javax.swing.JButton();
+        panelTemperatura = new javax.swing.JPanel();
+        labelControlartemperatura = new javax.swing.JLabel();
+        jSlider1 = new javax.swing.JSlider();
+        labelTemperatura = new javax.swing.JLabel();
+        labelGrados = new javax.swing.JLabel();
 
         setMaximumSize(new java.awt.Dimension(1080, 720));
         setMinimumSize(new java.awt.Dimension(1080, 720));
@@ -120,16 +146,110 @@ public class PanelMesa extends javax.swing.JPanel {
             }
         });
 
-        jButton1.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        jButton1.setText("i");
-        jButton1.setMaximumSize(new java.awt.Dimension(100, 100));
-        jButton1.setMinimumSize(new java.awt.Dimension(100, 100));
-        jButton1.setPreferredSize(new java.awt.Dimension(100, 100));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        botonInformacion.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        botonInformacion.setText("i");
+        botonInformacion.setMaximumSize(new java.awt.Dimension(100, 100));
+        botonInformacion.setMinimumSize(new java.awt.Dimension(100, 100));
+        botonInformacion.setPreferredSize(new java.awt.Dimension(100, 100));
+        botonInformacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                botonInformacionActionPerformed(evt);
             }
         });
+
+        botonCubiertos.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        botonCubiertos.setText("Cambiar Cubiertos");
+        botonCubiertos.setMaximumSize(new java.awt.Dimension(150, 456));
+        botonCubiertos.setMinimumSize(new java.awt.Dimension(150, 456));
+        botonCubiertos.setPreferredSize(new java.awt.Dimension(150, 456));
+
+        botonCambioPlato.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        botonCambioPlato.setText("Pasar al siguiente plato");
+        botonCambioPlato.setMaximumSize(new java.awt.Dimension(490, 225));
+        botonCambioPlato.setMinimumSize(new java.awt.Dimension(490, 225));
+        botonCambioPlato.setPreferredSize(new java.awt.Dimension(490, 225));
+        botonCambioPlato.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonCambioPlatoActionPerformed(evt);
+            }
+        });
+
+        botonPedirBebida.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        botonPedirBebida.setText("Pedir Bebida");
+        botonPedirBebida.setMaximumSize(new java.awt.Dimension(185, 90));
+        botonPedirBebida.setMinimumSize(new java.awt.Dimension(185, 90));
+        botonPedirBebida.setPreferredSize(new java.awt.Dimension(185, 90));
+
+        botonCambioVaso.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        botonCambioVaso.setText("Solicitar Cambio de Vaso");
+        botonCambioVaso.setMaximumSize(new java.awt.Dimension(185, 90));
+        botonCambioVaso.setMinimumSize(new java.awt.Dimension(185, 90));
+        botonCambioVaso.setPreferredSize(new java.awt.Dimension(185, 90));
+        botonCambioVaso.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonCambioVasoActionPerformed(evt);
+            }
+        });
+
+        panelTemperatura.setMaximumSize(new java.awt.Dimension(490, 225));
+        panelTemperatura.setMinimumSize(new java.awt.Dimension(490, 225));
+        panelTemperatura.setPreferredSize(new java.awt.Dimension(490, 225));
+
+        labelControlartemperatura.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        labelControlartemperatura.setText("Regular temperatura del plato");
+
+        jSlider1.setMaximum(35);
+        jSlider1.setMinimum(15);
+        jSlider1.setValue(15);
+        jSlider1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jSlider1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                jSlider1MouseDragged(evt);
+            }
+        });
+        jSlider1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jSlider1MouseClicked(evt);
+            }
+        });
+
+        labelTemperatura.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        labelTemperatura.setText("15");
+
+        labelGrados.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        labelGrados.setText("º");
+
+        javax.swing.GroupLayout panelTemperaturaLayout = new javax.swing.GroupLayout(panelTemperatura);
+        panelTemperatura.setLayout(panelTemperaturaLayout);
+        panelTemperaturaLayout.setHorizontalGroup(
+            panelTemperaturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTemperaturaLayout.createSequentialGroup()
+                .addGroup(panelTemperaturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(panelTemperaturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelTemperaturaLayout.createSequentialGroup()
+                            .addGap(96, 96, 96)
+                            .addComponent(labelControlartemperatura))
+                        .addGroup(panelTemperaturaLayout.createSequentialGroup()
+                            .addGap(237, 237, 237)
+                            .addComponent(labelTemperatura)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(labelGrados))))
+                .addContainerGap(81, Short.MAX_VALUE))
+        );
+        panelTemperaturaLayout.setVerticalGroup(
+            panelTemperaturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTemperaturaLayout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(labelControlartemperatura)
+                .addGap(29, 29, 29)
+                .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(panelTemperaturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelTemperatura)
+                    .addComponent(labelGrados))
+                .addContainerGap(57, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -138,21 +258,52 @@ public class PanelMesa extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(botonVolver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(950, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(botonVolver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(botonInformacion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 128, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(botonCambioPlato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(panelTemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(130, 130, 130)
+                                .addComponent(botonCubiertos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(52, 52, 52))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(botonCambioVaso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(botonPedirBebida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(199, 199, 199))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
-                .addComponent(botonVolver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(botonInformacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(40, 40, 40)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(botonVolver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(30, Short.MAX_VALUE)
+                        .addComponent(botonPedirBebida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(botonCambioVaso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(botonCambioPlato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(panelTemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, 0))
+                            .addComponent(botonCubiertos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(30, 30, 30))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -173,13 +324,13 @@ public class PanelMesa extends javax.swing.JPanel {
     private void botonVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonVolverActionPerformed
         // TODO add your handling code here:
         PanelInicio p = new PanelInicio();
-		p.setSize(1080, 720);
-		p.setLocation(0, 0);
+	p.setSize(1080, 720);
+	p.setLocation(0, 0);
 		
-		this.removeAll();
-		this.add(p, BorderLayout.CENTER);
-		this.revalidate();
-		this.repaint();
+	this.removeAll();
+	this.add(p, BorderLayout.CENTER);
+	this.revalidate();
+	this.repaint();
     }//GEN-LAST:event_botonVolverActionPerformed
 
     private void subirAlturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subirAlturaActionPerformed
@@ -196,19 +347,73 @@ public class PanelMesa extends javax.swing.JPanel {
         
     }//GEN-LAST:event_subirAlturaActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void botonInformacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonInformacionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_botonInformacionActionPerformed
 
+    private void botonCambioVasoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCambioVasoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botonCambioVasoActionPerformed
+
+    private void jSlider1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSlider1MouseClicked
+        // TODO add your handling code here:
+        temperatura = jSlider1.getValue();
+        String cadena = Integer.toString(temperatura);
+        labelTemperatura.setText(cadena);
+    }//GEN-LAST:event_jSlider1MouseClicked
+
+    private void jSlider1MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSlider1MouseDragged
+        // TODO add your handling code here:
+        temperatura = jSlider1.getValue();
+        String cadena = Integer.toString(temperatura);
+        labelTemperatura.setText(cadena);
+    }//GEN-LAST:event_jSlider1MouseDragged
+
+    private void botonCambioPlatoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCambioPlatoActionPerformed
+        // TODO add your handling code here:
+        if (FramePrincipal.getPlato() == 1){
+            FramePrincipal.setPlato(2);
+            botonCambioPlato.setText("Pasar al postre");
+        }
+        else if (FramePrincipal.getPlato() == 2){
+            FramePrincipal.setPlato(3);
+            botonCambioPlato.setText("Fin Comida");
+        }
+        else if (FramePrincipal.getPlato() == 3){
+            botonCambioPlato.setEnabled(true);
+            PanelSobremesa p = new PanelSobremesa();
+            p.setSize(1080, 720);
+            p.setLocation(0, 0);
+		
+            this.removeAll();
+            this.add(p, BorderLayout.CENTER);
+            this.revalidate();
+            this.repaint();
+        }
+    }//GEN-LAST:event_botonCambioPlatoActionPerformed
+
+    public void activarBotonCambioPlato(){
+        botonCambioPlato.setEnabled(true);
+    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bajarAltura;
+    private javax.swing.JButton botonCambioPlato;
+    private javax.swing.JButton botonCambioVaso;
+    private javax.swing.JButton botonCubiertos;
+    private javax.swing.JButton botonInformacion;
+    private javax.swing.JButton botonPedirBebida;
     private javax.swing.JButton botonVolver;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JSlider jSlider1;
+    private javax.swing.JLabel labelControlartemperatura;
+    private javax.swing.JLabel labelGrados;
+    private javax.swing.JLabel labelTemperatura;
     private javax.swing.JLabel numAltura;
+    private javax.swing.JPanel panelTemperatura;
     private javax.swing.JButton subirAltura;
     // End of variables declaration//GEN-END:variables
 }
