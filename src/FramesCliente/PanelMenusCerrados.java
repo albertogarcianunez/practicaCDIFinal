@@ -55,7 +55,7 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         jRadioButton8 = new javax.swing.JRadioButton();
         jRadioButton9 = new javax.swing.JRadioButton();
-        jCheckBox1 = new javax.swing.JCheckBox();
+        bebida1 = new javax.swing.JCheckBox();
         panelMenu2 = new javax.swing.JPanel();
         botonVegano = new javax.swing.JRadioButton();
         jLabel4 = new javax.swing.JLabel();
@@ -67,7 +67,7 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         jRadioButton14 = new javax.swing.JRadioButton();
         jRadioButton15 = new javax.swing.JRadioButton();
-        jCheckBox2 = new javax.swing.JCheckBox();
+        bebida2 = new javax.swing.JCheckBox();
         panelMenu3 = new javax.swing.JPanel();
         botonGluten = new javax.swing.JRadioButton();
         jLabel7 = new javax.swing.JLabel();
@@ -79,7 +79,7 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
         jLabel9 = new javax.swing.JLabel();
         jRadioButton20 = new javax.swing.JRadioButton();
         jRadioButton21 = new javax.swing.JRadioButton();
-        jCheckBox3 = new javax.swing.JCheckBox();
+        bebida3 = new javax.swing.JCheckBox();
         botonConfirmarPedido = new javax.swing.JButton();
         labelTitulo = new javax.swing.JLabel();
         botonLimpiar = new javax.swing.JButton();
@@ -117,35 +117,41 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
         jLabel1.setText("Primer plato:");
 
         primeroVegeta.add(jRadioButton4);
-        jRadioButton4.setText("jRadioButton4");
+        jRadioButton4.setText("Tacos de lentejas");
+		jRadioButton4.setActionCommand("Tacos de lentejas");
         jRadioButton4.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jRadioButton4.setOpaque(false);
 
         primeroVegeta.add(jRadioButton5);
-        jRadioButton5.setText("jRadioButton5");
+        jRadioButton5.setText("Buñuelos de calabacín");
+		jRadioButton5.setActionCommand("Buñuelos de calabacín");
         jRadioButton5.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         jLabel2.setText("Segundo plato:");
 
         segundoVegeta.add(jRadioButton6);
-        jRadioButton6.setText("jRadioButton6");
+        jRadioButton6.setText("Filetes de coliflor");
+		jRadioButton6.setActionCommand("Filetes de coliflor");
         jRadioButton6.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         segundoVegeta.add(jRadioButton7);
-        jRadioButton7.setText("jRadioButton7");
+        jRadioButton7.setText("Pizza de queso de cabra");
+		jRadioButton7.setActionCommand("Pizza de queso de cabra");
         jRadioButton7.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         jLabel3.setText("Postres:");
 
         postreVegeta.add(jRadioButton8);
-        jRadioButton8.setText("jRadioButton8");
+        jRadioButton8.setText("Helado de yogur de mora");
+		jRadioButton8.setActionCommand("Helado de yogur de mora");
         jRadioButton8.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         postreVegeta.add(jRadioButton9);
-        jRadioButton9.setText("jRadioButton9");
+        jRadioButton9.setText("Brownie a la taza");
+		jRadioButton9.setActionCommand("Brownie a la taza");
         jRadioButton9.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
-        jCheckBox1.setText("Bebida");
+        bebida1.setText("Bebida");
 
         javax.swing.GroupLayout panelMenu1Layout = new javax.swing.GroupLayout(panelMenu1);
         panelMenu1.setLayout(panelMenu1Layout);
@@ -157,25 +163,29 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
                         .addContainerGap()
                         .addComponent(botonVegeta, javax.swing.GroupLayout.DEFAULT_SIZE, 268, Short.MAX_VALUE))
                     .addGroup(panelMenu1Layout.createSequentialGroup()
-                        .addGroup(panelMenu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jRadioButton5)
-                            .addGroup(panelMenu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(panelMenu1Layout.createSequentialGroup()
-                                    .addGap(48, 48, 48)
-                                    .addComponent(jRadioButton4))
-                                .addGroup(panelMenu1Layout.createSequentialGroup()
-                                    .addGap(24, 24, 24)
-                                    .addGroup(panelMenu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel2)
-                                        .addComponent(jLabel1)
-                                        .addComponent(jLabel3)
-                                        .addComponent(jCheckBox1))))
-                            .addComponent(jRadioButton6)
-                            .addComponent(jRadioButton7)
-                            .addComponent(jRadioButton8)
-                            .addComponent(jRadioButton9))
+                        .addGroup(panelMenu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panelMenu1Layout.createSequentialGroup()
+                                .addGap(24, 24, 24)
+                                .addGroup(panelMenu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jLabel3)
+                                    .addComponent(bebida1)))
+                            .addGroup(panelMenu1Layout.createSequentialGroup()
+                                .addGap(48, 48, 48)
+                                .addGroup(panelMenu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jRadioButton4)
+                                    .addComponent(jRadioButton8)
+                                    .addComponent(jRadioButton5)
+                                    .addComponent(jRadioButton9))))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(panelMenu1Layout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addGroup(panelMenu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jRadioButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jRadioButton6))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelMenu1Layout.setVerticalGroup(
             panelMenu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -201,7 +211,7 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jRadioButton9)
                 .addGap(34, 34, 34)
-                .addComponent(jCheckBox1)
+                .addComponent(bebida1)
                 .addContainerGap(147, Short.MAX_VALUE))
         );
 
@@ -222,35 +232,41 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
         jLabel4.setText("Primer plato:");
 
         primeroVegano.add(jRadioButton10);
-        jRadioButton10.setText("jRadioButton4");
+        jRadioButton10.setText("Crema de verduras");
+		jRadioButton10.setActionCommand("Crema de Verduras");
         jRadioButton10.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jRadioButton10.setOpaque(false);
 
         primeroVegano.add(jRadioButton11);
-        jRadioButton11.setText("jRadioButton5");
+        jRadioButton11.setText("Ensalada de mijo");
+		jRadioButton11.setActionCommand("Ensalada de mijo");
         jRadioButton11.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         jLabel5.setText("Segundo plato:");
 
         segundoVegano.add(jRadioButton12);
-        jRadioButton12.setText("jRadioButton6");
+        jRadioButton12.setText("Rollo de verduras");
+		jRadioButton12.setActionCommand("Rollo de verduras");
         jRadioButton12.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         segundoVegano.add(jRadioButton13);
-        jRadioButton13.setText("jRadioButton6");
+        jRadioButton13.setText("Hamburguesa de quinoa y lentejas");
+		jRadioButton13.setActionCommand("Hamburguesa de quinoa y lentejas");
         jRadioButton13.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         jLabel6.setText("Postres:");
 
         postreVegano.add(jRadioButton14);
-        jRadioButton14.setText("jRadioButton8");
+        jRadioButton14.setText("Napolitana salada");
+		jRadioButton14.setActionCommand("Napolitana salada");
         jRadioButton14.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         postreVegano.add(jRadioButton15);
-        jRadioButton15.setText("jRadioButton9");
+        jRadioButton15.setText("Flan de chocolate vegano");
+		jRadioButton15.setActionCommand("Flan de chocolate vegano");
         jRadioButton15.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
-        jCheckBox2.setText("Bebida");
+        bebida2.setText("Bebida");
 
         javax.swing.GroupLayout panelMenu2Layout = new javax.swing.GroupLayout(panelMenu2);
         panelMenu2.setLayout(panelMenu2Layout);
@@ -258,29 +274,38 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
             panelMenu2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelMenu2Layout.createSequentialGroup()
                 .addGroup(panelMenu2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelMenu2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(botonVegano, javax.swing.GroupLayout.DEFAULT_SIZE, 268, Short.MAX_VALUE))
                     .addGroup(panelMenu2Layout.createSequentialGroup()
                         .addGroup(panelMenu2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(panelMenu2Layout.createSequentialGroup()
                                 .addGap(47, 47, 47)
                                 .addGroup(panelMenu2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jRadioButton11)
-                                    .addComponent(jRadioButton10)
                                     .addComponent(jRadioButton13)
-                                    .addComponent(jRadioButton12)
-                                    .addComponent(jRadioButton14)
-                                    .addComponent(jRadioButton15)))
+                                    .addComponent(jRadioButton12, javax.swing.GroupLayout.Alignment.LEADING)))
                             .addGroup(panelMenu2Layout.createSequentialGroup()
                                 .addGap(28, 28, 28)
                                 .addGroup(panelMenu2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel5)
                                     .addComponent(jLabel4)
                                     .addComponent(jLabel6)
-                                    .addComponent(jCheckBox2))))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                                    .addComponent(bebida2))))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(panelMenu2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(panelMenu2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(botonVegano, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 268, Short.MAX_VALUE)
+                            .addGroup(panelMenu2Layout.createSequentialGroup()
+                                .addGap(38, 38, 38)
+                                .addGroup(panelMenu2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jRadioButton15)
+                                    .addComponent(jRadioButton14))
+                                .addGap(0, 0, Short.MAX_VALUE)))))
                 .addContainerGap())
+            .addGroup(panelMenu2Layout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addGroup(panelMenu2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jRadioButton11)
+                    .addComponent(jRadioButton10))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelMenu2Layout.setVerticalGroup(
             panelMenu2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -289,24 +314,24 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
                 .addComponent(botonVegano)
                 .addGap(20, 20, 20)
                 .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jRadioButton10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jRadioButton11)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(12, 12, 12)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jRadioButton13)
-                .addGap(7, 7, 7)
-                .addComponent(jRadioButton12)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jRadioButton12)
+                .addGap(11, 11, 11)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jRadioButton14)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jRadioButton15)
                 .addGap(34, 34, 34)
-                .addComponent(jCheckBox2)
+                .addComponent(bebida2)
                 .addContainerGap(141, Short.MAX_VALUE))
         );
 
@@ -327,40 +352,51 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
         jLabel7.setText("Primer plato:");
 
         segundoGluten.add(jRadioButton16);
-        jRadioButton16.setText("jRadioButton4");
+        jRadioButton16.setText("Pizza marinera");
+		jRadioButton16.setActionCommand("Pizza marinera");
         jRadioButton16.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jRadioButton16.setOpaque(false);
 
         primeroGluten.add(jRadioButton17);
-        jRadioButton17.setText("jRadioButton4");
+        jRadioButton17.setText("Salmorejo");
+		jRadioButton17.setActionCommand("Salmorejo");
         jRadioButton17.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jRadioButton17.setOpaque(false);
 
         jLabel8.setText("Segundo plato:");
 
         primeroGluten.add(jRadioButton18);
-        jRadioButton18.setText("jRadioButton4");
+        jRadioButton18.setText("Sopa castellana");
+		jRadioButton18.setActionCommand("Sopa castellana");
         jRadioButton18.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jRadioButton18.setOpaque(false);
 
         segundoGluten.add(jRadioButton19);
-        jRadioButton19.setText("jRadioButton4");
+        jRadioButton19.setText("Pimientos rellenos de carne");
+		jRadioButton19.setActionCommand("Pimientos rellenos de carne");
         jRadioButton19.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jRadioButton19.setOpaque(false);
 
         jLabel9.setText("Postres:");
 
         postreGluten.add(jRadioButton20);
-        jRadioButton20.setText("jRadioButton4");
+        jRadioButton20.setText("Tarta de fresas");
+		jRadioButton20.setActionCommand("Tarta de fresa");
         jRadioButton20.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jRadioButton20.setOpaque(false);
+        jRadioButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton20ActionPerformed(evt);
+            }
+        });
 
         postreGluten.add(jRadioButton21);
-        jRadioButton21.setText("jRadioButton4");
+        jRadioButton21.setText("Rosquillas del santo");
+		jRadioButton21.setActionCommand("Rosquillas del santo");
         jRadioButton21.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jRadioButton21.setOpaque(false);
 
-        jCheckBox3.setText("Bebida");
+        bebida3.setText("Bebida");
 
         javax.swing.GroupLayout panelMenu3Layout = new javax.swing.GroupLayout(panelMenu3);
         panelMenu3.setLayout(panelMenu3Layout);
@@ -379,19 +415,22 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
                                     .addComponent(jLabel8)
                                     .addComponent(jLabel7)
                                     .addComponent(jLabel9)
-                                    .addComponent(jCheckBox3)))
+                                    .addComponent(bebida3)))
                             .addGroup(panelMenu3Layout.createSequentialGroup()
                                 .addGap(53, 53, 53)
                                 .addGroup(panelMenu3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jRadioButton16)
-                                    .addGroup(panelMenu3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jRadioButton18)
-                                        .addComponent(jRadioButton17))
                                     .addComponent(jRadioButton19)
-                                    .addComponent(jRadioButton20)
-                                    .addComponent(jRadioButton21))))
+                                    .addComponent(jRadioButton20, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jRadioButton16, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jRadioButton21, javax.swing.GroupLayout.Alignment.LEADING))))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(panelMenu3Layout.createSequentialGroup()
+                .addGap(51, 51, 51)
+                .addGroup(panelMenu3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jRadioButton18)
+                    .addComponent(jRadioButton17))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelMenu3Layout.setVerticalGroup(
             panelMenu3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -402,11 +441,11 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jRadioButton17)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jRadioButton18)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(10, 10, 10)
                 .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(7, 7, 7)
                 .addComponent(jRadioButton16)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jRadioButton19)
@@ -414,10 +453,10 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
                 .addComponent(jLabel9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jRadioButton20)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jRadioButton21)
-                .addGap(34, 34, 34)
-                .addComponent(jCheckBox3)
+                .addGap(37, 37, 37)
+                .addComponent(bebida3)
                 .addContainerGap(142, Short.MAX_VALUE))
         );
 
@@ -512,7 +551,7 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
         
         this.setLayout(null);
         botonLimpiar.setVisible(true);
-        des.cambiarTexto("descripcion platos 1<br>descripcion platos 2<br>descripcion postres");
+        des.cambiarTexto("<html><body>descripcion platos 1<br>descripcion platos 2<br>descripcion postres</body></html>");
         if(!des.isVisible())
             des.setVisible(true);
         this.revalidate();
@@ -577,6 +616,14 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
 
     private void botonConfirmarPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonConfirmarPedidoActionPerformed
         // TODO add your handling code here:
+        FramePrincipal.setPrimero(obtenerPrimero());
+        FramePrincipal.setSegundo(obtenerSegundo());
+        FramePrincipal.setPostre(obtenerPostre());
+        FramePrincipal.setMenu(true);
+        if(bebida1.isSelected() || bebida2.isSelected() || bebida3.isSelected())
+            FramePrincipal.setBebida(true);
+        else
+            FramePrincipal.setBebida(false);
         FramePrincipal.setPlato(1);
         PanelMesa p = new PanelMesa();
         p.setSize(1080, 720);
@@ -587,7 +634,46 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
         this.revalidate();
         this.repaint();
     }//GEN-LAST:event_botonConfirmarPedidoActionPerformed
+
+    private void jRadioButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton20ActionPerformed
     
+    private String obtenerPrimero(){
+       String primero;
+       if(botonVegeta.isSelected()){
+           primero = primeroVegeta.getSelection().getActionCommand();
+       }
+       else if(botonVegano.isSelected()){
+           primero = primeroVegano.getSelection().getActionCommand();
+       }else
+           primero = primeroGluten.getSelection().getActionCommand();
+        return primero;
+    }
+    
+    private String obtenerSegundo(){
+       String segundo;
+       if(botonVegeta.isSelected()){
+           segundo = segundoVegeta.getSelection().getActionCommand();
+       }
+       else if(botonVegano.isSelected()){
+           segundo = segundoVegano.getSelection().getActionCommand();
+       }else
+           segundo = segundoGluten.getSelection().getActionCommand();
+        return segundo;
+    }
+    
+    private String obtenerPostre(){
+       String postre;
+       if(botonVegeta.isSelected()){
+           postre = postreVegeta.getSelection().getActionCommand();
+       }
+       else if(botonVegano.isSelected()){
+           postre = postreVegano.getSelection().getActionCommand();
+       }else
+           postre = postreGluten.getSelection().getActionCommand();
+        return postre;
+    }
 
     
     public class descripMenu extends javax.swing.JPanel {
@@ -645,6 +731,9 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBox bebida1;
+    private javax.swing.JCheckBox bebida2;
+    private javax.swing.JCheckBox bebida3;
     private javax.swing.JButton botonConfirmarPedido;
     private javax.swing.JRadioButton botonGluten;
     private javax.swing.JButton botonLimpiar;
@@ -652,9 +741,6 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
     private javax.swing.JRadioButton botonVegeta;
     private javax.swing.JButton botonVolver;
     private javax.swing.ButtonGroup botonesMenuCerrado;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

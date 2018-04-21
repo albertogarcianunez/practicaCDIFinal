@@ -41,6 +41,11 @@ public class PanelSobremesa extends javax.swing.JPanel {
         botonCafe.setMaximumSize(new java.awt.Dimension(550, 150));
         botonCafe.setMinimumSize(new java.awt.Dimension(550, 150));
         botonCafe.setPreferredSize(new java.awt.Dimension(550, 150));
+        botonCafe.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonCafeActionPerformed(evt);
+            }
+        });
 
         botonPagar.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         botonPagar.setText("Solicitar la Cuenta");
@@ -94,6 +99,14 @@ public class PanelSobremesa extends javax.swing.JPanel {
 
     private void botonPagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPagarActionPerformed
         // TODO add your handling code here:
+        panelCuenta p = new panelCuenta();
+        p.setSize(1080, 720);
+	p.setLocation(0, 0);
+		
+	this.removeAll();
+	this.add(p, BorderLayout.CENTER);
+	this.revalidate();
+	this.repaint();
     }//GEN-LAST:event_botonPagarActionPerformed
 
     private void botonVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonVolverActionPerformed
@@ -107,6 +120,11 @@ public class PanelSobremesa extends javax.swing.JPanel {
 	this.revalidate();
 	this.repaint();
     }//GEN-LAST:event_botonVolverActionPerformed
+
+    private void botonCafeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCafeActionPerformed
+        // TODO add your handling code here:
+        FramePrincipal.setCafe(true);
+    }//GEN-LAST:event_botonCafeActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

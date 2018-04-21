@@ -179,6 +179,11 @@ public class PanelMesa extends javax.swing.JPanel {
         botonPedirBebida.setMaximumSize(new java.awt.Dimension(185, 90));
         botonPedirBebida.setMinimumSize(new java.awt.Dimension(185, 90));
         botonPedirBebida.setPreferredSize(new java.awt.Dimension(185, 90));
+        botonPedirBebida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonPedirBebidaActionPerformed(evt);
+            }
+        });
 
         botonCambioVaso.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         botonCambioVaso.setText("Solicitar Cambio de Vaso");
@@ -301,8 +306,7 @@ public class PanelMesa extends javax.swing.JPanel {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(botonCambioPlato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(panelTemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, 0))
+                                .addComponent(panelTemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(botonCubiertos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(30, 30, 30))
         );
@@ -391,6 +395,11 @@ public class PanelMesa extends javax.swing.JPanel {
             this.repaint();
         }
     }//GEN-LAST:event_botonCambioPlatoActionPerformed
+
+    private void botonPedirBebidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPedirBebidaActionPerformed
+        // TODO add your handling code here:
+        FramePrincipal.setBebida(true);
+    }//GEN-LAST:event_botonPedirBebidaActionPerformed
 
     public void activarBotonCambioPlato(){
         botonCambioPlato.setEnabled(true);
