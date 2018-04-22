@@ -117,6 +117,14 @@ public class PanelPedido extends javax.swing.JPanel {
 
     private void botonCartaAbiertaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCartaAbiertaActionPerformed
         // TODO add your handling code here:
+        panelSelec1 p = new panelSelec1();
+        p.setSize(1080, 720);
+        p.setLocation(0, 0);
+
+        this.removeAll();
+        this.add(p, BorderLayout.CENTER);
+        this.revalidate();
+        this.repaint();
     }//GEN-LAST:event_botonCartaAbiertaActionPerformed
 
     private void botonVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonVolverActionPerformed

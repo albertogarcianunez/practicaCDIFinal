@@ -17,6 +17,7 @@ public class FramePrincipal extends javax.swing.JFrame {
      * Creates new form FramePrincipal
      */
     
+    private static pedido ped= new pedido();
     private static int plato = 0;
     
     public FramePrincipal() {
@@ -144,7 +145,32 @@ public class FramePrincipal extends javax.swing.JFrame {
     public static int getPlato (){
         return plato;
     }
-
+    
+    public static void setPrimero(String primero){
+        ped.setPrimero(primero);
+    }
+    public static void setSegundo(String segundo){
+        ped.setSegundo(segundo);
+    }
+    public static void setPostre(String postre){
+        ped.setPostre(postre);
+    }
+    
+    public static void setBebida(boolean bebida){
+        ped.setBebida(bebida);
+    }
+    
+    public static void setCafe(boolean cafe){
+        ped.setCafe(cafe);
+    }
+    
+    public static void setMenu(boolean menu){
+        ped.setMenu(menu);
+    }
+    
+    public static String getTicket(){
+        return ped.crearTicket();
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botonInicio;
     private javax.swing.JPanel panelFrame;

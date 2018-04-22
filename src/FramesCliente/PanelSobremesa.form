@@ -70,6 +70,9 @@
           <Dimension value="[550, 150]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonCafeActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="botonPagar">
       <Properties>

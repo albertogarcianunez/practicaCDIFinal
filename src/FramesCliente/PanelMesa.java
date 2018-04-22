@@ -409,6 +409,7 @@ public class PanelMesa extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_botonCambioPlatoActionPerformed
 
+//<<<<<<< HEAD
     private void botonCubiertosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCubiertosActionPerformed
         // TODO add your handling code here:
         FrameCambiarCubiertos f = new FrameCambiarCubiertos();
@@ -417,9 +418,11 @@ public class PanelMesa extends javax.swing.JPanel {
         f.setVisible(true);
     }//GEN-LAST:event_botonCubiertosActionPerformed
 
+//=======
     private void botonPedirBebidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPedirBebidaActionPerformed
         // TODO add your handling code here:
-       
+        FramePrincipal.setBebida(true);
+//>>>>>>> refs/remotes/origin/master
     }//GEN-LAST:event_botonPedirBebidaActionPerformed
 
     public void activarBotonCambioPlato(){
