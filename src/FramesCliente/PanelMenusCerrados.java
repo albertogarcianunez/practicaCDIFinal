@@ -546,7 +546,6 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
         panelMenu2.setVisible(false);
        
         this.setLayout(null);
-        //panelMenu1.setLocation(400,100);
         panelMenu3.setLocation(60,95);
         
         botonLimpiar.setVisible(true);
@@ -558,8 +557,7 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
     }//GEN-LAST:event_botonGlutenActionPerformed
 
     private void botonLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonLimpiarActionPerformed
-        // TODO add your handling code here:
-        
+        // TODO add your handling code here:  
         des.setVisible(false);
         botonLimpiar.setVisible(false);
         if(!panelMenu1.isVisible()){
@@ -570,7 +568,9 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
         if(!panelMenu2.isVisible())
             panelMenu2.setVisible(true);
         if(!panelMenu3.isVisible())
-            panelMenu3.setVisible(true);         
+            panelMenu3.setVisible(true); 
+        
+        
     }//GEN-LAST:event_botonLimpiarActionPerformed
 
     private void botonConfirmarPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonConfirmarPedidoActionPerformed

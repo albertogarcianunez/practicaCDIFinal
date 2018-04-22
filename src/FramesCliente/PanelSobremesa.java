@@ -110,6 +110,10 @@ public class PanelSobremesa extends javax.swing.JPanel {
     private void botonCafeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCafeActionPerformed
         // TODO add your handling code here:
         FramePrincipal.setCafe(true);
+        FrameCafe f = new FrameCafe();
+        f.setSize(450, 200);
+        f.setLocation(345, 200);
+        f.setVisible(true);
     }//GEN-LAST:event_botonCafeActionPerformed
 
 
