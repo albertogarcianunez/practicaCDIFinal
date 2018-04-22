@@ -422,6 +422,14 @@ public class PanelMesa extends javax.swing.JPanel {
     private void botonPedirBebidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPedirBebidaActionPerformed
         // TODO add your handling code here:
         FramePrincipal.setBebida(true);
+        panelBebida p = new panelBebida();
+        p.setSize(1080, 720);
+        p.setLocation(0, 0);
+
+        this.removeAll();
+        this.add(p, BorderLayout.CENTER);
+        this.revalidate();
+        this.repaint();
 //>>>>>>> refs/remotes/origin/master
     }//GEN-LAST:event_botonPedirBebidaActionPerformed
 
