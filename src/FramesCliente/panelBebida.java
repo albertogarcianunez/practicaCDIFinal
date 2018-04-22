@@ -40,9 +40,14 @@ public class panelBebida extends javax.swing.JPanel {
         jRadioButton8 = new javax.swing.JRadioButton();
         botonVolver = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+
+        setLayout(null);
 
         labelTitulo.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         labelTitulo.setText("Seleccione su bebida");
+        add(labelTitulo);
+        labelTitulo.setBounds(332, 21, 416, 56);
 
         buttonGroup1.add(jRadioButton1);
         jRadioButton1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -52,6 +57,8 @@ public class panelBebida extends javax.swing.JPanel {
                 jRadioButton1ActionPerformed(evt);
             }
         });
+        add(jRadioButton1);
+        jRadioButton1.setBounds(385, 191, 209, 37);
 
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -61,6 +68,8 @@ public class panelBebida extends javax.swing.JPanel {
                 jRadioButton2ActionPerformed(evt);
             }
         });
+        add(jRadioButton2);
+        jRadioButton2.setBounds(385, 256, 231, 37);
 
         buttonGroup1.add(jRadioButton3);
         jRadioButton3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -70,6 +79,8 @@ public class panelBebida extends javax.swing.JPanel {
                 jRadioButton3ActionPerformed(evt);
             }
         });
+        add(jRadioButton3);
+        jRadioButton3.setBounds(385, 321, 107, 37);
 
         buttonGroup1.add(jRadioButton4);
         jRadioButton4.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -79,6 +90,8 @@ public class panelBebida extends javax.swing.JPanel {
                 jRadioButton4ActionPerformed(evt);
             }
         });
+        add(jRadioButton4);
+        jRadioButton4.setBounds(385, 126, 127, 37);
 
         buttonGroup1.add(jRadioButton5);
         jRadioButton5.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -88,6 +101,8 @@ public class panelBebida extends javax.swing.JPanel {
                 jRadioButton5ActionPerformed(evt);
             }
         });
+        add(jRadioButton5);
+        jRadioButton5.setBounds(385, 451, 149, 37);
 
         buttonGroup1.add(jRadioButton6);
         jRadioButton6.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -97,6 +112,8 @@ public class panelBebida extends javax.swing.JPanel {
                 jRadioButton6ActionPerformed(evt);
             }
         });
+        add(jRadioButton6);
+        jRadioButton6.setBounds(385, 516, 79, 37);
 
         buttonGroup1.add(jRadioButton8);
         jRadioButton8.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -106,9 +123,11 @@ public class panelBebida extends javax.swing.JPanel {
                 jRadioButton8ActionPerformed(evt);
             }
         });
+        add(jRadioButton8);
+        jRadioButton8.setBounds(385, 386, 129, 37);
 
         botonVolver.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        botonVolver.setText("Volver");
+        botonVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/Volver.png"))); // NOI18N
         botonVolver.setMaximumSize(new java.awt.Dimension(100, 75));
         botonVolver.setMinimumSize(new java.awt.Dimension(100, 75));
         botonVolver.setPreferredSize(new java.awt.Dimension(100, 75));
@@ -117,6 +136,8 @@ public class panelBebida extends javax.swing.JPanel {
                 botonVolverActionPerformed(evt);
             }
         });
+        add(botonVolver);
+        botonVolver.setBounds(30, 600, 100, 70);
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jButton1.setText("Aceptar");
@@ -125,62 +146,13 @@ public class panelBebida extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
+        add(jButton1);
+        jButton1.setBounds(360, 610, 280, 48);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(332, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(labelTitulo)
-                        .addGap(332, 332, 332))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jRadioButton2)
-                            .addComponent(jRadioButton1)
-                            .addComponent(jRadioButton3)
-                            .addComponent(jRadioButton5)
-                            .addComponent(jRadioButton6)
-                            .addComponent(jRadioButton8)
-                            .addComponent(jRadioButton4))
-                        .addGap(464, 464, 464))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(botonVolver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(284, 284, 284)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(labelTitulo)
-                .addGap(49, 49, 49)
-                .addComponent(jRadioButton4)
-                .addGap(28, 28, 28)
-                .addComponent(jRadioButton1)
-                .addGap(28, 28, 28)
-                .addComponent(jRadioButton2)
-                .addGap(28, 28, 28)
-                .addComponent(jRadioButton3)
-                .addGap(28, 28, 28)
-                .addComponent(jRadioButton8)
-                .addGap(28, 28, 28)
-                .addComponent(jRadioButton5)
-                .addGap(28, 28, 28)
-                .addComponent(jRadioButton6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(botonVolver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(22, 22, 22))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(32, 32, 32))))
-        );
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/fondo azul_1.jpg"))); // NOI18N
+        add(jLabel1);
+        jLabel1.setBounds(0, 0, 1080, 720);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
@@ -241,6 +213,7 @@ public class panelBebida extends javax.swing.JPanel {
     private javax.swing.JButton botonVolver;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton3;
