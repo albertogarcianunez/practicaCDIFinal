@@ -77,7 +77,7 @@ public class PanelMesa extends javax.swing.JPanel {
         jPanel1.setPreferredSize(new java.awt.Dimension(100, 400));
 
         subirAltura.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        subirAltura.setText("flecha arriba");
+        subirAltura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/configuracionMesa/imagenFlechaArriba.png"))); // NOI18N
         subirAltura.setMaximumSize(new java.awt.Dimension(95, 95));
         subirAltura.setMinimumSize(new java.awt.Dimension(95, 95));
         subirAltura.setPreferredSize(new java.awt.Dimension(95, 95));
@@ -88,7 +88,7 @@ public class PanelMesa extends javax.swing.JPanel {
         });
 
         bajarAltura.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        bajarAltura.setText("flecha abajo");
+        bajarAltura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/configuracionMesa/imagenFlechaAbajo.png"))); // NOI18N
         bajarAltura.setBorderPainted(false);
         bajarAltura.setMaximumSize(new java.awt.Dimension(95, 95));
         bajarAltura.setMinimumSize(new java.awt.Dimension(95, 95));
@@ -147,7 +147,7 @@ public class PanelMesa extends javax.swing.JPanel {
         });
 
         botonInformacion.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        botonInformacion.setText("i");
+        botonInformacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/configuracionMesa/imagenInformacion.png"))); // NOI18N
         botonInformacion.setMaximumSize(new java.awt.Dimension(100, 100));
         botonInformacion.setMinimumSize(new java.awt.Dimension(100, 100));
         botonInformacion.setPreferredSize(new java.awt.Dimension(100, 100));
@@ -162,6 +162,11 @@ public class PanelMesa extends javax.swing.JPanel {
         botonCubiertos.setMaximumSize(new java.awt.Dimension(150, 456));
         botonCubiertos.setMinimumSize(new java.awt.Dimension(150, 456));
         botonCubiertos.setPreferredSize(new java.awt.Dimension(150, 456));
+        botonCubiertos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonCubiertosActionPerformed(evt);
+            }
+        });
 
         botonCambioPlato.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         botonCambioPlato.setText("Pasar al siguiente plato");
@@ -179,6 +184,11 @@ public class PanelMesa extends javax.swing.JPanel {
         botonPedirBebida.setMaximumSize(new java.awt.Dimension(185, 90));
         botonPedirBebida.setMinimumSize(new java.awt.Dimension(185, 90));
         botonPedirBebida.setPreferredSize(new java.awt.Dimension(185, 90));
+        botonPedirBebida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonPedirBebidaActionPerformed(evt);
+            }
+        });
 
         botonCambioVaso.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         botonCambioVaso.setText("Solicitar Cambio de Vaso");
@@ -301,8 +311,7 @@ public class PanelMesa extends javax.swing.JPanel {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(botonCambioPlato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(panelTemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, 0))
+                                .addComponent(panelTemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(botonCubiertos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(30, 30, 30))
         );
@@ -349,10 +358,18 @@ public class PanelMesa extends javax.swing.JPanel {
 
     private void botonInformacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonInformacionActionPerformed
         // TODO add your handling code here:
+        FrameInformacion f = new FrameInformacion();
+        f.setSize(700, 360);
+        f.setLocation(175, 100);
+        f.setVisible(true);
     }//GEN-LAST:event_botonInformacionActionPerformed
 
     private void botonCambioVasoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCambioVasoActionPerformed
         // TODO add your handling code here:
+        FrameCambiarVaso f = new FrameCambiarVaso();
+        f.setSize(450, 200);
+        f.setLocation(345, 200);
+        f.setVisible(true);
     }//GEN-LAST:event_botonCambioVasoActionPerformed
 
     private void jSlider1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSlider1MouseClicked
@@ -391,6 +408,19 @@ public class PanelMesa extends javax.swing.JPanel {
             this.repaint();
         }
     }//GEN-LAST:event_botonCambioPlatoActionPerformed
+
+    private void botonCubiertosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCubiertosActionPerformed
+        // TODO add your handling code here:
+        FrameCambiarCubiertos f = new FrameCambiarCubiertos();
+        f.setSize(375, 200);
+        f.setLocation(345, 200);
+        f.setVisible(true);
+    }//GEN-LAST:event_botonCubiertosActionPerformed
+
+    private void botonPedirBebidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPedirBebidaActionPerformed
+        // TODO add your handling code here:
+       
+    }//GEN-LAST:event_botonPedirBebidaActionPerformed
 
     public void activarBotonCambioPlato(){
         botonCambioPlato.setEnabled(true);

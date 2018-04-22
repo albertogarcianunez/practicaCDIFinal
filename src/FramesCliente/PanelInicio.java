@@ -31,6 +31,8 @@ public class PanelInicio extends javax.swing.JPanel {
 
         hacerPedido = new javax.swing.JButton();
         configMesa = new javax.swing.JButton();
+        imagenPedido = new javax.swing.JLabel();
+        imagenConfiguracionMesa = new javax.swing.JLabel();
 
         setPreferredSize(new java.awt.Dimension(1080, 720));
 
@@ -61,24 +63,44 @@ public class PanelInicio extends javax.swing.JPanel {
             }
         });
 
+        imagenPedido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/imagenPedido.png"))); // NOI18N
+
+        imagenConfiguracionMesa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/imagenConfiguracionMesa.png"))); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(265, 265, 265)
+                .addGap(132, 132, 132)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(configMesa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hacerPedido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(265, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(imagenPedido)
+                        .addGap(66, 66, 66)
+                        .addComponent(hacerPedido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(imagenConfiguracionMesa)
+                        .addGap(42, 42, 42)
+                        .addComponent(configMesa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(199, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(175, 175, 175)
-                .addComponent(hacerPedido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(175, 175, 175)
+                        .addComponent(hacerPedido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(imagenPedido)
+                        .addGap(26, 26, 26)))
                 .addGap(100, 100, 100)
-                .addComponent(configMesa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(configMesa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addComponent(imagenConfiguracionMesa)))
                 .addGap(143, 143, 143))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -115,5 +137,7 @@ public class PanelInicio extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton configMesa;
     private javax.swing.JButton hacerPedido;
+    private javax.swing.JLabel imagenConfiguracionMesa;
+    private javax.swing.JLabel imagenPedido;
     // End of variables declaration//GEN-END:variables
 }

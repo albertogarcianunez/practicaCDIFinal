@@ -61,7 +61,7 @@ public class PanelPedido extends javax.swing.JPanel {
         });
 
         botonInfo.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        botonInfo.setText("i");
+        botonInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/configuracionMesa/imagenInformacion.png"))); // NOI18N
         botonInfo.setMaximumSize(new java.awt.Dimension(100, 100));
         botonInfo.setMinimumSize(new java.awt.Dimension(100, 100));
         botonInfo.setPreferredSize(new java.awt.Dimension(100, 100));
@@ -133,13 +133,10 @@ public class PanelPedido extends javax.swing.JPanel {
 
     private void botonInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonInfoActionPerformed
         // TODO add your handling code here:
-		PanelInformacion p = new PanelInformacion();
-		p.setSize(790, 350);
-		p.setLocation(148, 30);
-		
-		this.add(p, BorderLayout.CENTER);
-		this.revalidate();
-		this.repaint();
+        FrameInformacion f = new FrameInformacion();
+        f.setSize(700, 360);
+        f.setLocation(175, 100);
+        f.setVisible(true);
     }//GEN-LAST:event_botonInfoActionPerformed
 
     private void botonMenuCerradoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonMenuCerradoActionPerformed
