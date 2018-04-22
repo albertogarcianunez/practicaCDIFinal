@@ -34,9 +34,11 @@ public class PanelPedido extends javax.swing.JPanel {
         botonMenuCerrado = new javax.swing.JButton();
         botonInfo = new javax.swing.JButton();
         botonVolver = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setMaximumSize(new java.awt.Dimension(1080, 720));
         setMinimumSize(new java.awt.Dimension(1080, 720));
+        setLayout(null);
 
         botonCartaAbierta.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         botonCartaAbierta.setText("Carta Abierta");
@@ -48,6 +50,8 @@ public class PanelPedido extends javax.swing.JPanel {
                 botonCartaAbiertaActionPerformed(evt);
             }
         });
+        add(botonCartaAbierta);
+        botonCartaAbierta.setBounds(265, 175, 550, 150);
 
         botonMenuCerrado.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         botonMenuCerrado.setText("Menús Cerrados");
@@ -59,6 +63,8 @@ public class PanelPedido extends javax.swing.JPanel {
                 botonMenuCerradoActionPerformed(evt);
             }
         });
+        add(botonMenuCerrado);
+        botonMenuCerrado.setBounds(265, 425, 550, 150);
 
         botonInfo.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         botonInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/configuracionMesa/imagenInformacion.png"))); // NOI18N
@@ -70,9 +76,11 @@ public class PanelPedido extends javax.swing.JPanel {
                 botonInfoActionPerformed(evt);
             }
         });
+        add(botonInfo);
+        botonInfo.setBounds(30, 30, 100, 100);
 
         botonVolver.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        botonVolver.setText("Volver");
+        botonVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/Volver.png"))); // NOI18N
         botonVolver.setMaximumSize(new java.awt.Dimension(100, 75));
         botonVolver.setMinimumSize(new java.awt.Dimension(100, 75));
         botonVolver.setPreferredSize(new java.awt.Dimension(100, 75));
@@ -81,38 +89,13 @@ public class PanelPedido extends javax.swing.JPanel {
                 botonVolverActionPerformed(evt);
             }
         });
+        add(botonVolver);
+        botonVolver.setBounds(30, 600, 100, 70);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(265, 265, 265)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(botonMenuCerrado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(botonCartaAbierta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(botonVolver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(botonInfo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(265, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(botonInfo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45)
-                .addComponent(botonCartaAbierta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100)
-                .addComponent(botonMenuCerrado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
-                .addComponent(botonVolver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30))
-        );
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/fondo azul_1.jpg"))); // NOI18N
+        add(jLabel1);
+        jLabel1.setBounds(0, 0, 1080, 720);
     }// </editor-fold>//GEN-END:initComponents
 
     private void botonCartaAbiertaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCartaAbiertaActionPerformed
@@ -165,5 +148,6 @@ public class PanelPedido extends javax.swing.JPanel {
     private javax.swing.JButton botonInfo;
     private javax.swing.JButton botonMenuCerrado;
     private javax.swing.JButton botonVolver;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

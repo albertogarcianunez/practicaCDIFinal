@@ -46,9 +46,14 @@ public class panelCuenta extends javax.swing.JPanel {
         jPasswordField1 = new javax.swing.JPasswordField();
         botonVolver = new javax.swing.JButton();
         botonPagar = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+
+        setLayout(null);
 
         labelTitulo.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         labelTitulo.setText("Solicitar cuenta");
+        add(labelTitulo);
+        labelTitulo.setBounds(379, 26, 318, 56);
 
         pTicket.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -83,6 +88,9 @@ public class panelCuenta extends javax.swing.JPanel {
                 .addComponent(labelTicket, javax.swing.GroupLayout.PREFERRED_SIZE, 348, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(53, Short.MAX_VALUE))
         );
+
+        add(pTicket);
+        pTicket.setBounds(10, 115, 526, 512);
 
         pTarjeta.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -150,11 +158,14 @@ public class panelCuenta extends javax.swing.JPanel {
                 .addGroup(pTarjetaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel6)
                     .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(161, Short.MAX_VALUE))
         );
 
+        add(pTarjeta);
+        pTarjeta.setBounds(536, 115, 534, 512);
+
         botonVolver.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        botonVolver.setText("Volver");
+        botonVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/Volver.png"))); // NOI18N
         botonVolver.setMaximumSize(new java.awt.Dimension(100, 75));
         botonVolver.setMinimumSize(new java.awt.Dimension(100, 75));
         botonVolver.setPreferredSize(new java.awt.Dimension(100, 75));
@@ -163,6 +174,8 @@ public class panelCuenta extends javax.swing.JPanel {
                 botonVolverActionPerformed(evt);
             }
         });
+        add(botonVolver);
+        botonVolver.setBounds(30, 640, 100, 70);
 
         botonPagar.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         botonPagar.setText("Confirmar pago");
@@ -171,45 +184,13 @@ public class panelCuenta extends javax.swing.JPanel {
                 botonPagarActionPerformed(evt);
             }
         });
+        add(botonPagar);
+        botonPagar.setBounds(456, 645, 235, 59);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(pTicket, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(pTarjeta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(379, 379, 379)
-                                .addComponent(labelTitulo))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(31, 31, 31)
-                                .addComponent(botonVolver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(325, 325, 325)
-                                .addComponent(botonPagar, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(26, Short.MAX_VALUE)
-                .addComponent(labelTitulo)
-                .addGap(33, 33, 33)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(pTicket, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pTarjeta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(botonVolver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botonPagar, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)))
-        );
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/fondo azul_1.jpg"))); // NOI18N
+        add(jLabel2);
+        jLabel2.setBounds(0, 0, 1080, 720);
     }// </editor-fold>//GEN-END:initComponents
 
     private void botonVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonVolverActionPerformed
@@ -245,6 +226,7 @@ public class panelCuenta extends javax.swing.JPanel {
     private javax.swing.JButton botonPagar;
     private javax.swing.JButton botonVolver;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

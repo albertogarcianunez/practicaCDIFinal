@@ -37,7 +37,6 @@ public class FrameCambiarVaso extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(450, 200));
         setMinimumSize(new java.awt.Dimension(450, 200));
-        setPreferredSize(new java.awt.Dimension(450, 200));
         setResizable(false);
 
         jPanel1.setMaximumSize(new java.awt.Dimension(450, 200));

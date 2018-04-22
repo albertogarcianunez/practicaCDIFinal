@@ -34,13 +34,19 @@ public class panelSelec2 extends javax.swing.JPanel {
         labelTitulo = new javax.swing.JLabel();
         botonPasarPostre = new javax.swing.JButton();
         botonVolver = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setPreferredSize(new java.awt.Dimension(1080, 720));
+        setLayout(null);
 
         scrollSelec2.setPreferredSize(new java.awt.Dimension(1080, 500));
+        add(scrollSelec2);
+        scrollSelec2.setBounds(0, 96, 1080, 500);
 
         labelTitulo.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         labelTitulo.setText("Selección segundo plato");
+        add(labelTitulo);
+        labelTitulo.setBounds(299, 22, 482, 56);
 
         botonPasarPostre.setText("Pasar a postre");
         botonPasarPostre.addActionListener(new java.awt.event.ActionListener() {
@@ -48,46 +54,22 @@ public class panelSelec2 extends javax.swing.JPanel {
                 botonPasarPostreActionPerformed(evt);
             }
         });
+        add(botonPasarPostre);
+        botonPasarPostre.setBounds(400, 600, 368, 70);
 
-        botonVolver.setText("Volver");
+        botonVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/Volver.png"))); // NOI18N
         botonVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonVolverActionPerformed(evt);
             }
         });
+        add(botonVolver);
+        botonVolver.setBounds(30, 600, 100, 70);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(scrollSelec2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(299, 299, 299)
-                        .addComponent(labelTitulo))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(botonVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(290, 290, 290)
-                        .addComponent(botonPasarPostre, javax.swing.GroupLayout.PREFERRED_SIZE, 368, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(labelTitulo)
-                .addGap(18, 18, 18)
-                .addComponent(scrollSelec2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonPasarPostre, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botonVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(36, Short.MAX_VALUE))
-        );
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/fondo azul_1.jpg"))); // NOI18N
+        add(jLabel1);
+        jLabel1.setBounds(0, 0, 1080, 720);
     }// </editor-fold>//GEN-END:initComponents
 
     private void botonPasarPostreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPasarPostreActionPerformed
@@ -105,7 +87,7 @@ public class panelSelec2 extends javax.swing.JPanel {
 
     private void botonVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonVolverActionPerformed
         // TODO add your handling code here:
-        PanelPedido p = new PanelPedido();
+        panelSelec1 p = new panelSelec1();
         p.setSize(1080, 720);
         p.setLocation(0, 0);
 
@@ -125,6 +107,7 @@ public class panelSelec2 extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botonPasarPostre;
     private javax.swing.JButton botonVolver;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel labelTitulo;
     private javax.swing.JScrollPane scrollSelec2;
     // End of variables declaration//GEN-END:variables

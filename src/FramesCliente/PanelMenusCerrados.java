@@ -83,14 +83,16 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
         botonConfirmarPedido = new javax.swing.JButton();
         labelTitulo = new javax.swing.JLabel();
         botonLimpiar = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
 
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setMaximumSize(new java.awt.Dimension(1080, 720));
         setMinimumSize(new java.awt.Dimension(1080, 720));
         setPreferredSize(new java.awt.Dimension(1080, 720));
+        setLayout(null);
 
         botonVolver.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        botonVolver.setText("Volver");
+        botonVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/Volver.png"))); // NOI18N
         botonVolver.setMaximumSize(new java.awt.Dimension(100, 75));
         botonVolver.setMinimumSize(new java.awt.Dimension(100, 75));
         botonVolver.setPreferredSize(new java.awt.Dimension(100, 75));
@@ -99,6 +101,8 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
                 botonVolverActionPerformed(evt);
             }
         });
+        add(botonVolver);
+        botonVolver.setBounds(30, 600, 100, 70);
 
         panelMenu1.setBackground(new java.awt.Color(204, 204, 255));
         panelMenu1.setMaximumSize(new java.awt.Dimension(280, 490));
@@ -118,37 +122,31 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
 
         primeroVegeta.add(jRadioButton4);
         jRadioButton4.setText("Tacos de lentejas");
-		jRadioButton4.setActionCommand("Tacos de lentejas");
         jRadioButton4.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jRadioButton4.setOpaque(false);
 
         primeroVegeta.add(jRadioButton5);
         jRadioButton5.setText("Buñuelos de calabacín");
-		jRadioButton5.setActionCommand("Buñuelos de calabacín");
         jRadioButton5.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         jLabel2.setText("Segundo plato:");
 
         segundoVegeta.add(jRadioButton6);
         jRadioButton6.setText("Filetes de coliflor");
-		jRadioButton6.setActionCommand("Filetes de coliflor");
         jRadioButton6.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         segundoVegeta.add(jRadioButton7);
         jRadioButton7.setText("Pizza de queso de cabra");
-		jRadioButton7.setActionCommand("Pizza de queso de cabra");
         jRadioButton7.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         jLabel3.setText("Postres:");
 
         postreVegeta.add(jRadioButton8);
         jRadioButton8.setText("Helado de yogur de mora");
-		jRadioButton8.setActionCommand("Helado de yogur de mora");
         jRadioButton8.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         postreVegeta.add(jRadioButton9);
         jRadioButton9.setText("Brownie a la taza");
-		jRadioButton9.setActionCommand("Brownie a la taza");
         jRadioButton9.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         bebida1.setText("Bebida");
@@ -183,8 +181,8 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
             .addGroup(panelMenu1Layout.createSequentialGroup()
                 .addGap(46, 46, 46)
                 .addGroup(panelMenu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jRadioButton6))
+                    .addComponent(jRadioButton6)
+                    .addComponent(jRadioButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelMenu1Layout.setVerticalGroup(
@@ -215,6 +213,9 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
                 .addContainerGap(147, Short.MAX_VALUE))
         );
 
+        add(panelMenu1);
+        panelMenu1.setBounds(59, 95, 280, 490);
+
         panelMenu2.setBackground(new java.awt.Color(204, 204, 255));
         panelMenu2.setMaximumSize(new java.awt.Dimension(280, 490));
         panelMenu2.setMinimumSize(new java.awt.Dimension(280, 490));
@@ -233,37 +234,31 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
 
         primeroVegano.add(jRadioButton10);
         jRadioButton10.setText("Crema de verduras");
-		jRadioButton10.setActionCommand("Crema de Verduras");
         jRadioButton10.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jRadioButton10.setOpaque(false);
 
         primeroVegano.add(jRadioButton11);
         jRadioButton11.setText("Ensalada de mijo");
-		jRadioButton11.setActionCommand("Ensalada de mijo");
         jRadioButton11.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         jLabel5.setText("Segundo plato:");
 
         segundoVegano.add(jRadioButton12);
         jRadioButton12.setText("Rollo de verduras");
-		jRadioButton12.setActionCommand("Rollo de verduras");
         jRadioButton12.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         segundoVegano.add(jRadioButton13);
         jRadioButton13.setText("Hamburguesa de quinoa y lentejas");
-		jRadioButton13.setActionCommand("Hamburguesa de quinoa y lentejas");
         jRadioButton13.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         jLabel6.setText("Postres:");
 
         postreVegano.add(jRadioButton14);
         jRadioButton14.setText("Napolitana salada");
-		jRadioButton14.setActionCommand("Napolitana salada");
         jRadioButton14.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         postreVegano.add(jRadioButton15);
         jRadioButton15.setText("Flan de chocolate vegano");
-		jRadioButton15.setActionCommand("Flan de chocolate vegano");
         jRadioButton15.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         bebida2.setText("Bebida");
@@ -335,6 +330,9 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
                 .addContainerGap(141, Short.MAX_VALUE))
         );
 
+        add(panelMenu2);
+        panelMenu2.setBounds(400, 95, 280, 490);
+
         panelMenu3.setBackground(new java.awt.Color(204, 204, 255));
         panelMenu3.setMaximumSize(new java.awt.Dimension(280, 490));
         panelMenu3.setMinimumSize(new java.awt.Dimension(280, 490));
@@ -353,13 +351,11 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
 
         segundoGluten.add(jRadioButton16);
         jRadioButton16.setText("Pizza marinera");
-		jRadioButton16.setActionCommand("Pizza marinera");
         jRadioButton16.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jRadioButton16.setOpaque(false);
 
         primeroGluten.add(jRadioButton17);
         jRadioButton17.setText("Salmorejo");
-		jRadioButton17.setActionCommand("Salmorejo");
         jRadioButton17.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jRadioButton17.setOpaque(false);
 
@@ -367,13 +363,11 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
 
         primeroGluten.add(jRadioButton18);
         jRadioButton18.setText("Sopa castellana");
-		jRadioButton18.setActionCommand("Sopa castellana");
         jRadioButton18.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jRadioButton18.setOpaque(false);
 
         segundoGluten.add(jRadioButton19);
         jRadioButton19.setText("Pimientos rellenos de carne");
-		jRadioButton19.setActionCommand("Pimientos rellenos de carne");
         jRadioButton19.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jRadioButton19.setOpaque(false);
 
@@ -381,7 +375,6 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
 
         postreGluten.add(jRadioButton20);
         jRadioButton20.setText("Tarta de fresas");
-		jRadioButton20.setActionCommand("Tarta de fresa");
         jRadioButton20.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jRadioButton20.setOpaque(false);
         jRadioButton20.addActionListener(new java.awt.event.ActionListener() {
@@ -392,7 +385,6 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
 
         postreGluten.add(jRadioButton21);
         jRadioButton21.setText("Rosquillas del santo");
-		jRadioButton21.setActionCommand("Rosquillas del santo");
         jRadioButton21.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jRadioButton21.setOpaque(false);
 
@@ -460,6 +452,9 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
                 .addContainerGap(142, Short.MAX_VALUE))
         );
 
+        add(panelMenu3);
+        panelMenu3.setBounds(740, 95, 280, 490);
+
         botonConfirmarPedido.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         botonConfirmarPedido.setText("Confirmar Pedido");
         botonConfirmarPedido.addActionListener(new java.awt.event.ActionListener() {
@@ -467,65 +462,29 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
                 botonConfirmarPedidoActionPerformed(evt);
             }
         });
+        add(botonConfirmarPedido);
+        botonConfirmarPedido.setBounds(390, 610, 311, 51);
 
         labelTitulo.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         labelTitulo.setText("Menús Cerrados");
+        add(labelTitulo);
+        labelTitulo.setBounds(375, 21, 341, 56);
 
         botonLimpiar.setText("Limpiar");
+        botonLimpiar.setMaximumSize(new java.awt.Dimension(70, 30));
+        botonLimpiar.setMinimumSize(new java.awt.Dimension(70, 30));
+        botonLimpiar.setPreferredSize(new java.awt.Dimension(70, 30));
         botonLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonLimpiarActionPerformed(evt);
             }
         });
+        add(botonLimpiar);
+        botonLimpiar.setBounds(810, 620, 70, 30);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(30, 30, 30)
-                                .addComponent(botonVolver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(59, 59, 59)
-                                .addComponent(panelMenu1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(1, 1, 1)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(60, 60, 60)
-                                .addComponent(panelMenu2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(60, 60, 60)
-                                .addComponent(panelMenu3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(44, 44, 44)
-                                .addComponent(botonConfirmarPedido)
-                                .addGap(135, 135, 135)
-                                .addComponent(botonLimpiar))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(375, 375, 375)
-                        .addComponent(labelTitulo)))
-                .addContainerGap(60, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(21, Short.MAX_VALUE)
-                .addComponent(labelTitulo)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(panelMenu1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(panelMenu2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(panelMenu3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonVolver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botonConfirmarPedido)
-                    .addComponent(botonLimpiar))
-                .addGap(30, 30, 30))
-        );
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/fondo azul_1.jpg"))); // NOI18N
+        add(jLabel10);
+        jLabel10.setBounds(0, 0, 1080, 720);
     }// </editor-fold>//GEN-END:initComponents
 
     private void botonVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonVolverActionPerformed
@@ -742,6 +701,7 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
     private javax.swing.JButton botonVolver;
     private javax.swing.ButtonGroup botonesMenuCerrado;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

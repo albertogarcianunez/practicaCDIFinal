@@ -33,8 +33,10 @@ public class PanelInicio extends javax.swing.JPanel {
         configMesa = new javax.swing.JButton();
         imagenPedido = new javax.swing.JLabel();
         imagenConfiguracionMesa = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setPreferredSize(new java.awt.Dimension(1080, 720));
+        setLayout(null);
 
         hacerPedido.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         hacerPedido.setText("Hacer Pedido");
@@ -46,6 +48,8 @@ public class PanelInicio extends javax.swing.JPanel {
                 hacerPedidoActionPerformed(evt);
             }
         });
+        add(hacerPedido);
+        hacerPedido.setBounds(331, 175, 550, 150);
 
         configMesa.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         configMesa.setText("Configurar Mesa");
@@ -62,47 +66,21 @@ public class PanelInicio extends javax.swing.JPanel {
                 configMesaActionPerformed(evt);
             }
         });
+        add(configMesa);
+        configMesa.setBounds(331, 425, 550, 150);
 
         imagenPedido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/imagenPedido.png"))); // NOI18N
+        add(imagenPedido);
+        imagenPedido.setBounds(165, 199, 100, 100);
 
         imagenConfiguracionMesa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/imagenConfiguracionMesa.png"))); // NOI18N
+        add(imagenConfiguracionMesa);
+        imagenConfiguracionMesa.setBounds(132, 433, 157, 127);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(132, 132, 132)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(imagenPedido)
-                        .addGap(66, 66, 66)
-                        .addComponent(hacerPedido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(imagenConfiguracionMesa)
-                        .addGap(42, 42, 42)
-                        .addComponent(configMesa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(199, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(175, 175, 175)
-                        .addComponent(hacerPedido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(imagenPedido)
-                        .addGap(26, 26, 26)))
-                .addGap(100, 100, 100)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(configMesa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(8, 8, 8)
-                        .addComponent(imagenConfiguracionMesa)))
-                .addGap(143, 143, 143))
-        );
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/fondo azul_1.jpg"))); // NOI18N
+        add(jLabel1);
+        jLabel1.setBounds(0, 0, 1080, 720);
     }// </editor-fold>//GEN-END:initComponents
 
     private void configMesaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_configMesaMouseClicked
@@ -139,5 +117,6 @@ public class PanelInicio extends javax.swing.JPanel {
     private javax.swing.JButton hacerPedido;
     private javax.swing.JLabel imagenConfiguracionMesa;
     private javax.swing.JLabel imagenPedido;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
