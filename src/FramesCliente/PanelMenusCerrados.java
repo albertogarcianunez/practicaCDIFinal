@@ -502,25 +502,29 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
 
     private void botonVegetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonVegetaActionPerformed
         // TODO add your handling code here:
-        des.setSize(500,300);
-        des.setLocation(400,95);
+        FrameMenuVegetariano f= new FrameMenuVegetariano();
+        f.setSize(550,400);
+        f.setLocation(400,120);
+        f.setVisible(true);
         
         panelMenu2.setVisible(false);
         panelMenu3.setVisible(false);
         
         this.setLayout(null);
         botonLimpiar.setVisible(true);
-        des.cambiarTexto("<html><body>descripcion platos 1<br>descripcion platos 2<br>descripcion postres</body></html>");
-        if(!des.isVisible())
-            des.setVisible(true);
+//        des.cambiarTexto("<html><body>descripcion platos 1<br>descripcion platos 2<br>descripcion postres</body></html>");
+//        if(!des.isVisible())
+//            des.setVisible(true);
         this.revalidate();
         this.repaint();
     }//GEN-LAST:event_botonVegetaActionPerformed
 
     private void botonVeganoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonVeganoActionPerformed
         // TODO add your handling code here:
-        des.setSize(500,300);
-        des.setLocation(400,95);
+        FrameMenuVegano f= new FrameMenuVegano();
+        f.setSize(550,400);
+        f.setLocation(400,120);
+        f.setVisible(true);
              
         panelMenu1.setVisible(false);
         panelMenu3.setVisible(false);
@@ -530,17 +534,19 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
         panelMenu2.setLocation(60,95);
         
         
-        des.cambiarTexto("descripcion platos 3\ndescripcion platos 4\ndescripcion postres");
-        if(!des.isVisible())
-            des.setVisible(true);
+//        des.cambiarTexto("descripcion platos 3\ndescripcion platos 4\ndescripcion postres");
+//        if(!des.isVisible())
+//            des.setVisible(true);
         this.revalidate();
         this.repaint();
     }//GEN-LAST:event_botonVeganoActionPerformed
 
     private void botonGlutenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonGlutenActionPerformed
         // TODO add your handling code here:
-        des.setSize(500,300);
-        des.setLocation(400,95);
+        FrameMenuSinGluten f= new FrameMenuSinGluten();
+        f.setSize(550,400);
+        f.setLocation(400,120);
+        f.setVisible(true);
        
         panelMenu1.setVisible(false);
         panelMenu2.setVisible(false);
@@ -549,9 +555,9 @@ public class PanelMenusCerrados extends javax.swing.JPanel {
         panelMenu3.setLocation(60,95);
         
         botonLimpiar.setVisible(true);
-        des.cambiarTexto("descripcion platos 5\ndescripcion platos 6\ndescripcion postres");
-        if(!des.isVisible())
-            des.setVisible(true);
+//        des.cambiarTexto("descripcion platos 5\ndescripcion platos 6\ndescripcion postres");
+//        if(!des.isVisible())
+//            des.setVisible(true);
         this.revalidate();
         this.repaint();
     }//GEN-LAST:event_botonGlutenActionPerformed
