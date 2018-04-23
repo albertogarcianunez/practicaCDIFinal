@@ -32,6 +32,8 @@ public class PanelSobremesa extends javax.swing.JPanel {
         botonCafe = new javax.swing.JButton();
         botonPagar = new javax.swing.JButton();
         botonVolver = new javax.swing.JButton();
+        imagenPedido = new javax.swing.JLabel();
+        imagenCuenta = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setMaximumSize(new java.awt.Dimension(1080, 720));
@@ -49,7 +51,7 @@ public class PanelSobremesa extends javax.swing.JPanel {
             }
         });
         add(botonCafe);
-        botonCafe.setBounds(265, 175, 550, 150);
+        botonCafe.setBounds(330, 170, 550, 150);
 
         botonPagar.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         botonPagar.setText("Solicitar la Cuenta");
@@ -62,7 +64,7 @@ public class PanelSobremesa extends javax.swing.JPanel {
             }
         });
         add(botonPagar);
-        botonPagar.setBounds(265, 425, 550, 150);
+        botonPagar.setBounds(330, 430, 550, 150);
 
         botonVolver.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         botonVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/Volver.png"))); // NOI18N
@@ -76,6 +78,15 @@ public class PanelSobremesa extends javax.swing.JPanel {
         });
         add(botonVolver);
         botonVolver.setBounds(30, 600, 100, 70);
+
+        imagenPedido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/imagenCafeGrande.png"))); // NOI18N
+        add(imagenPedido);
+        imagenPedido.setBounds(165, 199, 100, 100);
+
+        imagenCuenta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        imagenCuenta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/imagenRecibo.png"))); // NOI18N
+        add(imagenCuenta);
+        imagenCuenta.setBounds(170, 460, 100, 100);
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/fondo azul_1.jpg"))); // NOI18N
@@ -121,6 +132,8 @@ public class PanelSobremesa extends javax.swing.JPanel {
     private javax.swing.JButton botonCafe;
     private javax.swing.JButton botonPagar;
     private javax.swing.JButton botonVolver;
+    private javax.swing.JLabel imagenCuenta;
+    private javax.swing.JLabel imagenPedido;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
