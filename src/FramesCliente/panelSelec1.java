@@ -30,6 +30,7 @@ public class panelSelec1 extends javax.swing.JPanel {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        bindingGroup = new org.jdesktop.beansbinding.BindingGroup();
 
         seleccionPrimero = new javax.swing.ButtonGroup();
         scrollSelec1 = new javax.swing.JScrollPane();
@@ -290,6 +291,10 @@ public class panelSelec1 extends javax.swing.JPanel {
 
         seleccionPrimero.add(jRadioButton1);
         jRadioButton1.setText("Corvina a la plancha");
+
+        org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton1, org.jdesktop.beansbinding.ELProperty.create("Corvina a la plancha"), jRadioButton1, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton1ActionPerformed(evt);
@@ -298,6 +303,10 @@ public class panelSelec1 extends javax.swing.JPanel {
 
         seleccionPrimero.add(jRadioButton2);
         jRadioButton2.setText("Lubina a la sal");
+
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton2, org.jdesktop.beansbinding.ELProperty.create("Lubina a la sal"), jRadioButton2, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton2ActionPerformed(evt);
@@ -307,11 +316,20 @@ public class panelSelec1 extends javax.swing.JPanel {
         seleccionPrimero.add(jRadioButton3);
         jRadioButton3.setText("Dorada al horno");
 
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton3, org.jdesktop.beansbinding.ELProperty.create("Dorada al horno"), jRadioButton3, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         seleccionPrimero.add(jRadioButton4);
         jRadioButton4.setText("Boquerones fritos");
 
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton4, org.jdesktop.beansbinding.ELProperty.create("Boquerones fritos"), jRadioButton4, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         seleccionPrimero.add(jRadioButton5);
         jRadioButton5.setText("Bacalao con tomate");
+
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton5, org.jdesktop.beansbinding.ELProperty.create("Bacalao con tomate"), jRadioButton5, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
 
         jLabel31.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -319,6 +337,9 @@ public class panelSelec1 extends javax.swing.JPanel {
 
         seleccionPrimero.add(jRadioButton6);
         jRadioButton6.setText("Chuletón de ternera");
+
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton6, org.jdesktop.beansbinding.ELProperty.create("Chuletón de ternera"), jRadioButton6, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
 
         jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/Comida/Ternera.jpg"))); // NOI18N
@@ -329,6 +350,9 @@ public class panelSelec1 extends javax.swing.JPanel {
         seleccionPrimero.add(jRadioButton7);
         jRadioButton7.setText("Costillar al horno");
 
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton7, org.jdesktop.beansbinding.ELProperty.create("Costillar al horno"), jRadioButton7, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/Comida/Costillar.jpg"))); // NOI18N
         jLabel33.setMaximumSize(new java.awt.Dimension(140, 100));
@@ -337,6 +361,9 @@ public class panelSelec1 extends javax.swing.JPanel {
 
         seleccionPrimero.add(jRadioButton8);
         jRadioButton8.setText("Chuletas de cordero");
+
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton8, org.jdesktop.beansbinding.ELProperty.create("Chuletas de cordero"), jRadioButton8, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
 
         jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/Comida/Cordero.jpg"))); // NOI18N
@@ -347,6 +374,9 @@ public class panelSelec1 extends javax.swing.JPanel {
         seleccionPrimero.add(jRadioButton9);
         jRadioButton9.setText("Cochinillo asado");
 
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton9, org.jdesktop.beansbinding.ELProperty.create("Cochinillo asado"), jRadioButton9, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         jLabel35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/Comida/Cochinillo.jpg"))); // NOI18N
         jLabel35.setMaximumSize(new java.awt.Dimension(140, 100));
@@ -355,6 +385,9 @@ public class panelSelec1 extends javax.swing.JPanel {
 
         seleccionPrimero.add(jRadioButton10);
         jRadioButton10.setText("Rabo de toro");
+
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton10, org.jdesktop.beansbinding.ELProperty.create("Rabo de toro"), jRadioButton10, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
 
         jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/Comida/Rabo.jpg"))); // NOI18N
@@ -365,17 +398,32 @@ public class panelSelec1 extends javax.swing.JPanel {
         seleccionPrimero.add(jRadioButton11);
         jRadioButton11.setText("Ensalada César");
 
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton11, org.jdesktop.beansbinding.ELProperty.create("Ensalada César"), jRadioButton11, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         seleccionPrimero.add(jRadioButton12);
         jRadioButton12.setText("Ensalada mixta");
+
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton12, org.jdesktop.beansbinding.ELProperty.create("Ensalada mixta"), jRadioButton12, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
 
         seleccionPrimero.add(jRadioButton13);
         jRadioButton13.setText("Ensalada Waldorf");
 
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton13, org.jdesktop.beansbinding.ELProperty.create("Ensalada Waldorf"), jRadioButton13, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         seleccionPrimero.add(jRadioButton14);
         jRadioButton14.setText("Ensalada de pollo");
 
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton14, org.jdesktop.beansbinding.ELProperty.create("Ensalada de pollo"), jRadioButton14, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         seleccionPrimero.add(jRadioButton15);
         jRadioButton15.setText("Ensalada de patata");
+
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton15, org.jdesktop.beansbinding.ELProperty.create("Ensalada de patata"), jRadioButton15, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
 
         jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/Comida/Patatas.jpg"))); // NOI18N
@@ -386,8 +434,15 @@ public class panelSelec1 extends javax.swing.JPanel {
         seleccionPrimero.add(jRadioButton16);
         jRadioButton16.setText("Macarrones con tomate");
 
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton16, org.jdesktop.beansbinding.ELProperty.create("Macarrones con tomate"), jRadioButton16, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         seleccionPrimero.add(jRadioButton17);
         jRadioButton17.setText("Espaguetti a la carbonara");
+
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton17, org.jdesktop.beansbinding.ELProperty.create("Espaguetti a la carbonara"), jRadioButton17, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         jRadioButton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton17ActionPerformed(evt);
@@ -397,26 +452,50 @@ public class panelSelec1 extends javax.swing.JPanel {
         seleccionPrimero.add(jRadioButton18);
         jRadioButton18.setText("Ensalada de pasta");
 
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton18, org.jdesktop.beansbinding.ELProperty.create("Ensalada de pasta"), jRadioButton18, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         seleccionPrimero.add(jRadioButton19);
         jRadioButton19.setText("Trenette al pesto");
+
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton19, org.jdesktop.beansbinding.ELProperty.create("Trenette al pesto"), jRadioButton19, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
 
         seleccionPrimero.add(jRadioButton20);
         jRadioButton20.setText("Tallarines con anchoas");
 
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton20, org.jdesktop.beansbinding.ELProperty.create("Tallarines con anchoas"), jRadioButton20, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         seleccionPrimero.add(jRadioButton21);
         jRadioButton21.setText("Mejillones a la crema");
+
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton21, org.jdesktop.beansbinding.ELProperty.create("Mejillones a la crema"), jRadioButton21, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
 
         seleccionPrimero.add(jRadioButton22);
         jRadioButton22.setText("Tortillas de camarones");
 
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton22, org.jdesktop.beansbinding.ELProperty.create("Tortillas de camarones"), jRadioButton22, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         seleccionPrimero.add(jRadioButton23);
         jRadioButton23.setText("Centollo a la brasa");
+
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton23, org.jdesktop.beansbinding.ELProperty.create("Centollo a la brasa"), jRadioButton23, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
 
         seleccionPrimero.add(jRadioButton24);
         jRadioButton24.setText("Gambones a la plancha");
 
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton24, org.jdesktop.beansbinding.ELProperty.create("Gambones a la plancha"), jRadioButton24, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         seleccionPrimero.add(jRadioButton25);
         jRadioButton25.setText("Vieiras al horno");
+
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton25, org.jdesktop.beansbinding.ELProperty.create("Vieiras al horno"), jRadioButton25, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
 
         fotoCorvina.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         fotoCorvina.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/Comida/corvina.png"))); // NOI18N
@@ -727,7 +806,6 @@ public class panelSelec1 extends javax.swing.JPanel {
         jLabel8.setText("Alérgenos");
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCarmarero/imagenes/Alergias/icons8-peanuts-50.png"))); // NOI18N
-        jLabel9.setPreferredSize(new java.awt.Dimension(35, 35));
 
         jLabel10.setText("Frutos Secos");
 
@@ -913,7 +991,7 @@ public class panelSelec1 extends javax.swing.JPanel {
                             .addGap(18, 18, 18)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel9)
                                     .addGap(18, 18, 18)
                                     .addComponent(jLabel10))
                                 .addGroup(jPanel1Layout.createSequentialGroup()
@@ -943,7 +1021,7 @@ public class panelSelec1 extends javax.swing.JPanel {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(fotoCorvina)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(10, 10, 10)
                         .addComponent(jLabel10)))
@@ -1163,6 +1241,8 @@ public class panelSelec1 extends javax.swing.JPanel {
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/fondo azul_1.jpg"))); // NOI18N
         add(jLabel6);
         jLabel6.setBounds(0, 0, 1080, 720);
+
+        bindingGroup.bind();
     }// </editor-fold>//GEN-END:initComponents
 
     private void botonPasarSegundoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPasarSegundoActionPerformed
@@ -1331,5 +1411,6 @@ public class panelSelec1 extends javax.swing.JPanel {
     private javax.swing.JLabel labelTitulo;
     private javax.swing.JScrollPane scrollSelec1;
     private javax.swing.ButtonGroup seleccionPrimero;
+    private org.jdesktop.beansbinding.BindingGroup bindingGroup;
     // End of variables declaration//GEN-END:variables
 }

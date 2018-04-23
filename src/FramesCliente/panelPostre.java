@@ -28,6 +28,7 @@ public class panelPostre extends javax.swing.JPanel {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        bindingGroup = new org.jdesktop.beansbinding.BindingGroup();
 
         seleccionPostre = new javax.swing.ButtonGroup();
         labelTitulo = new javax.swing.JLabel();
@@ -118,11 +119,18 @@ public class panelPostre extends javax.swing.JPanel {
         jRadioButton2.setMinimumSize(new java.awt.Dimension(150, 30));
         jRadioButton2.setPreferredSize(new java.awt.Dimension(150, 30));
 
+        org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton2, org.jdesktop.beansbinding.ELProperty.create("Helado de chocolate"), jRadioButton2, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         seleccionPostre.add(jRadioButton3);
         jRadioButton3.setText("Helado de vainilla");
         jRadioButton3.setMaximumSize(new java.awt.Dimension(130, 30));
         jRadioButton3.setMinimumSize(new java.awt.Dimension(130, 30));
         jRadioButton3.setPreferredSize(new java.awt.Dimension(130, 30));
+
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton3, org.jdesktop.beansbinding.ELProperty.create("Helado de vainilla"), jRadioButton3, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton3ActionPerformed(evt);
@@ -135,11 +143,17 @@ public class panelPostre extends javax.swing.JPanel {
         jRadioButton4.setMinimumSize(new java.awt.Dimension(130, 30));
         jRadioButton4.setPreferredSize(new java.awt.Dimension(130, 30));
 
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton4, org.jdesktop.beansbinding.ELProperty.create("Flan de huevo"), jRadioButton4, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         seleccionPostre.add(jRadioButton5);
         jRadioButton5.setText("Crema Catalana");
         jRadioButton5.setMaximumSize(new java.awt.Dimension(130, 30));
         jRadioButton5.setMinimumSize(new java.awt.Dimension(130, 30));
         jRadioButton5.setPreferredSize(new java.awt.Dimension(130, 30));
+
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton5, org.jdesktop.beansbinding.ELProperty.create("Crema catalana"), jRadioButton5, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/Comida/Catalana.jpg"))); // NOI18N
@@ -171,6 +185,9 @@ public class panelPostre extends javax.swing.JPanel {
         jRadioButton7.setMinimumSize(new java.awt.Dimension(130, 30));
         jRadioButton7.setPreferredSize(new java.awt.Dimension(130, 30));
 
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton7, org.jdesktop.beansbinding.ELProperty.create("Tiramisú"), jRadioButton7, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/Comida/Tarta.jpg"))); // NOI18N
         jLabel6.setMaximumSize(new java.awt.Dimension(140, 100));
@@ -189,11 +206,17 @@ public class panelPostre extends javax.swing.JPanel {
         jRadioButton1.setMinimumSize(new java.awt.Dimension(105, 30));
         jRadioButton1.setPreferredSize(new java.awt.Dimension(105, 30));
 
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton1, org.jdesktop.beansbinding.ELProperty.create("Tarta de queso"), jRadioButton1, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
+
         seleccionPostre.add(jRadioButton6);
         jRadioButton6.setText("Tarta de chocolate");
         jRadioButton6.setMaximumSize(new java.awt.Dimension(130, 30));
         jRadioButton6.setMinimumSize(new java.awt.Dimension(130, 30));
         jRadioButton6.setPreferredSize(new java.awt.Dimension(130, 30));
+
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jRadioButton6, org.jdesktop.beansbinding.ELProperty.create("Tarta de chocolate"), jRadioButton6, org.jdesktop.beansbinding.BeanProperty.create("actionCommand"));
+        bindingGroup.addBinding(binding);
 
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(9);
@@ -438,6 +461,8 @@ public class panelPostre extends javax.swing.JPanel {
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/fondo azul_1.jpg"))); // NOI18N
         add(jLabel16);
         jLabel16.setBounds(0, 0, 1080, 720);
+
+        bindingGroup.bind();
     }// </editor-fold>//GEN-END:initComponents
 
     private void botonVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonVolverActionPerformed
@@ -520,5 +545,6 @@ public class panelPostre extends javax.swing.JPanel {
     private javax.swing.JTextArea jTextArea7;
     private javax.swing.JLabel labelTitulo;
     private javax.swing.ButtonGroup seleccionPostre;
+    private org.jdesktop.beansbinding.BindingGroup bindingGroup;
     // End of variables declaration//GEN-END:variables
 }

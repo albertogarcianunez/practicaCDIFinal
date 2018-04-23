@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="seleccionSegundo">
+    </Component>
+  </NonVisualComponents>
   <Properties>
     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="[1080, 720]"/>
@@ -869,34 +873,64 @@
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton1">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Corvina a la plancha"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton1" sourcePath="Corvina a la plancha" target="jRadioButton1" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton1ActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton2">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Lubina a la sal"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton2" sourcePath="Lubina a la sal" target="jRadioButton2" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton2ActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton3">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Dorada al horno"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton3" sourcePath="Dorada al horno" target="jRadioButton3" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton4">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Boquerones fritos"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton4" sourcePath="Boquerones fritos" target="jRadioButton4" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton5">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Bacalao con tomate"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton5" sourcePath="Bacalao con tomate" target="jRadioButton5" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel31">
               <Properties>
@@ -909,8 +943,14 @@
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton6">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Chulet&#xf3;n de ternera"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton6" sourcePath="Chulet&#xf3;n de ternera" target="jRadioButton6" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel32">
               <Properties>
@@ -931,8 +971,14 @@
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton7">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Costillar al horno"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton7" sourcePath="Costillar al horno" target="jRadioButton7" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel33">
               <Properties>
@@ -953,8 +999,14 @@
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton8">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Chuletas de cordero"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton8" sourcePath="Chuletas de cordero" target="jRadioButton8" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel34">
               <Properties>
@@ -975,8 +1027,14 @@
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton9">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Cochinillo asado"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton9" sourcePath="Cochinillo asado" target="jRadioButton9" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel35">
               <Properties>
@@ -997,8 +1055,14 @@
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton10">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Rabo de toro"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton10" sourcePath="Rabo de toro" target="jRadioButton10" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel36">
               <Properties>
@@ -1019,28 +1083,58 @@
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton11">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Ensalada C&#xe9;sar"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton11" sourcePath="Ensalada C&#xe9;sar" target="jRadioButton11" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton12">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Ensalada mixta"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton12" sourcePath="Ensalada mixta" target="jRadioButton12" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton13">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Ensalada Waldorf"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton13" sourcePath="Ensalada Walford" target="jRadioButton13" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton14">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Ensalada de pollo"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton14" sourcePath="Ensalada de pollo" target="jRadioButton14" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton15">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Ensalada de patata"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton15" sourcePath="Ensalada de patata" target="jRadioButton15" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel37">
               <Properties>
@@ -1061,56 +1155,116 @@
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton16">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Macarrones con tomate"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton16" sourcePath="Macarrones con tomate" target="jRadioButton16" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton17">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Espaguetti a la carbonara"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton17" sourcePath="Espaguetti a la carbonara" target="jRadioButton17" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton17ActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton18">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Ensalada de pasta"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton18" sourcePath="Ensalada de pasta" target="jRadioButton18" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton19">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Trenette al pesto"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton19" sourcePath="Trenette al pesto" target="jRadioButton19" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton20">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Tallarines con anchoas"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton20" sourcePath="Tallarines con anchoas" target="jRadioButton20" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton21">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Mejillones a la crema"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton21" sourcePath="Mejillones a la crema" target="jRadioButton21" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton22">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Tortillas de camarones"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton22" sourcePath="Tortilla de camarones" target="jRadioButton22" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton23">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Centollo a la brasa"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton23" sourcePath="Centollo a la brasa" target="jRadioButton23" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton24">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Gambones a la plancha"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton24" sourcePath="Gambones a la plancha" target="jRadioButton24" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton25">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="seleccionSegundo"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Vieiras al horno"/>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton25" sourcePath="Vieira al horno" target="jRadioButton25" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JLabel" name="fotoCorvina">
               <Properties>

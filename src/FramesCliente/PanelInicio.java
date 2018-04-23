@@ -33,6 +33,7 @@ public class PanelInicio extends javax.swing.JPanel {
         configMesa = new javax.swing.JButton();
         imagenPedido = new javax.swing.JLabel();
         imagenConfiguracionMesa = new javax.swing.JLabel();
+        botonInfo = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setPreferredSize(new java.awt.Dimension(1080, 720));
@@ -77,6 +78,19 @@ public class PanelInicio extends javax.swing.JPanel {
         add(imagenConfiguracionMesa);
         imagenConfiguracionMesa.setBounds(132, 433, 157, 127);
 
+        botonInfo.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        botonInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/configuracionMesa/imagenInformacion.png"))); // NOI18N
+        botonInfo.setMaximumSize(new java.awt.Dimension(100, 100));
+        botonInfo.setMinimumSize(new java.awt.Dimension(100, 100));
+        botonInfo.setPreferredSize(new java.awt.Dimension(100, 100));
+        botonInfo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonInfoActionPerformed(evt);
+            }
+        });
+        add(botonInfo);
+        botonInfo.setBounds(30, 30, 100, 100);
+
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FramesCliente/imagenes/fondo azul_1.jpg"))); // NOI18N
         add(jLabel1);
@@ -111,8 +125,17 @@ public class PanelInicio extends javax.swing.JPanel {
         this.repaint();
     }//GEN-LAST:event_hacerPedidoActionPerformed
 
+    private void botonInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonInfoActionPerformed
+        // TODO add your handling code here:
+        FrameInformacion f = new FrameInformacion();
+        f.setSize(700, 360);
+        f.setLocation(175, 100);
+        f.setVisible(true);
+    }//GEN-LAST:event_botonInfoActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton botonInfo;
     private javax.swing.JButton configMesa;
     private javax.swing.JButton hacerPedido;
     private javax.swing.JLabel imagenConfiguracionMesa;

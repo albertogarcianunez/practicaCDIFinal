@@ -5,6 +5,8 @@
  */
 package FramesCliente;
 
+import java.awt.BorderLayout;
+
 /**
  *
  * @author Manu
@@ -50,6 +52,11 @@ public class FrameInformacion extends javax.swing.JFrame {
 
         botonCarta.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         botonCarta.setText("Mostrar la Carta");
+        botonCarta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonCartaActionPerformed(evt);
+            }
+        });
 
         botonVolver.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         botonVolver.setText("Volver");
@@ -133,6 +140,15 @@ public class FrameInformacion extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.setVisible(false);
     }//GEN-LAST:event_botonVolverActionPerformed
+
+    private void botonCartaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCartaActionPerformed
+        // TODO add your handling code here:
+        FrameCarta f = new FrameCarta();
+        f.setSize(1100, 720);
+        f.setLocation(0, 0);
+        f.setVisible(true);
+        
+    }//GEN-LAST:event_botonCartaActionPerformed
 
     /**
      * @param args the command line arguments

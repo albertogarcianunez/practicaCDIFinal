@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
   <NonVisualComponents>
     <Component class="javax.swing.ButtonGroup" name="seleccionPostre">
     </Component>
@@ -20,6 +20,7 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,44,0,0,1,-112"/>
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
@@ -303,6 +304,9 @@
                   <Dimension value="[150, 30]"/>
                 </Property>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton2" sourcePath="Helado de chocolate" target="jRadioButton2" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton3">
               <Properties>
@@ -320,6 +324,9 @@
                   <Dimension value="[130, 30]"/>
                 </Property>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton3" sourcePath="Helado de vainilla" target="jRadioButton3" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton3ActionPerformed"/>
               </Events>
@@ -340,6 +347,9 @@
                   <Dimension value="[130, 30]"/>
                 </Property>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton4" sourcePath="Flan de huevo" target="jRadioButton4" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton5">
               <Properties>
@@ -357,6 +367,9 @@
                   <Dimension value="[130, 30]"/>
                 </Property>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton5" sourcePath="Crema catalana" target="jRadioButton5" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel3">
               <Properties>
@@ -442,6 +455,9 @@
                   <Dimension value="[130, 30]"/>
                 </Property>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton7" sourcePath="Tiramis&#xfa;" target="jRadioButton7" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel6">
               <Properties>
@@ -493,6 +509,9 @@
                   <Dimension value="[105, 30]"/>
                 </Property>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton1" sourcePath="Tarta de queso" target="jRadioButton1" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButton6">
               <Properties>
@@ -510,6 +529,9 @@
                   <Dimension value="[130, 30]"/>
                 </Property>
               </Properties>
+              <BindingProperties>
+                <BindingProperty name="actionCommand" source="jRadioButton6" sourcePath="Tarta de chocolate" target="jRadioButton6" targetPath="actionCommand" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
             </Component>
             <Container class="javax.swing.JScrollPane" name="jScrollPane2">
               <AuxValues>

@@ -51,15 +51,15 @@ public class pedido {
     public String crearTicket(){
         String ticket;
         if(!menu){
-            precio= 28.00; 
+            precio= 22.75; 
             ticket="<html><body>Platos:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"
                     + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;Precio:<br><br>"+
-                        primero+"&nbsp&nbsp&nbsp&nbsp&nbsp;10,00$<br><br>"+
-                        segundo+"&nbsp&nbsp&nbsp&nbsp&nbsp;12,00$<br><br>"+
-                        postre+"&nbsp&nbsp&nbsp&nbsp&nbsp;6,00$<br><br>";
+                        primero+"&nbsp&nbsp&nbsp&nbsp&nbsp;9.50$<br><br>"+
+                        segundo+"&nbsp&nbsp&nbsp&nbsp&nbsp;9,50$<br><br>"+
+                        postre+"&nbsp&nbsp&nbsp&nbsp&nbsp;3,75$<br><br>";
             if(bebida){
-                precio= precio +1;
-                ticket = ticket +"Bebida&nbsp&nbsp&nbsp&nbsp;1,00$<br>";
+                precio= precio +2.5;
+                ticket = ticket +"Bebida&nbsp&nbsp&nbsp&nbsp;2.50$<br>";
             }
             if(cafe){
                 precio= precio +1;
@@ -75,8 +75,8 @@ public class pedido {
                         segundo+"<br><br>"+
                         postre+"<br><br>";
             if(bebida){
-                precio= precio +1;
-                ticket = ticket +"Bebida&nbsp&nbsp&nbsp&nbsp;1,00$<br>";
+                precio= precio +2.5;
+                ticket = ticket +"Bebida&nbsp&nbsp&nbsp&nbsp;2.50$<br>";
             }
             if(cafe){
                 precio= precio +1;
